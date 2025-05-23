@@ -1,12 +1,277 @@
 ---
 import MainLayout from "../layouts/MainLayout.astro";
 import Button from '../components/Button.astro';
+import Card from '../components/Card.astro';
+import Card3  from '../components/Card3.astro';
 import Link from '../components/Link.astro';
 import { Image } from 'astro:assets';
 import thumbsup from "../assets/images/thumbsup.png";
 ---
 <MainLayout title="Titel">
 	
-	
+	<section class="relative h-screen w-full overflow-hidden pt-70">
+		<!-- Full-cover Image -->
+		<img src="hero.svg" 
+			 alt="Hero"
+			 class="absolute inset-50 w-auto h-100 object-cover z-0" />
+	  
+		<!-- Text container with adjusted mobile position -->
+		<div class="relative z-20 w-full h-full text-neutral-950 font-serif font-normal flex flex-col justify-center items-start px-6 sm:px-12 pb-70">
+		  <!-- Den Frie (Responsive position) -->
+		  <h1 class="text-5xl sm:text-4xl md:text-8xl xl:text-8xl leading-tight 
+					 sm:text-left md:text-left xl:text-left sm:mt-12 md:mt-25 xl:mt-10">
+				Den Frie
+		  </h1>
+	  
+		  <!-- Fri Kunst (Responsive position) -->
+		  <h1 class="text-5xl sm:text-4xl md:text-8xl xl:text-8xl leading-tight 
+					 sm:text-left md:text-left xl:text-left sm:mt-4 md:mt-8 xl:mt-4">
+				Fri Kunst 
+		  </h1>
+
+		  <!-- Frie Stemmer (Responsive position) -->
+		  <h1 class="text-5xl sm:text-4xl md:text-8xl xl:text-8xl leading-tight 
+		  sm:text-left md:text-left xl:text-left sm:mt-4 md:mt-8 xl:mt-4">
+	 	Frie Stemmer
+		</h1>
+		</div>
+		<div class="h-full w-px bg-gray-900 mx-4"></div>
+
+		   <!--Slut på hero unit sektion -->
+
+		   	<!--start på card sektion -->
+	  </section>
+		   <section id="destinationer" class="pt-20">
+  <div class="flex items-left space-x-4">
+    <h1 class="text-xl sm:text-xl md:text-6xl text-left text-neutral-950 font-serif font-normal pb-6 sm:pb-12 pl-20">
+      Aktuelle udstillinger
+    </h1>
+  </div>
+  <!-- Line -->
+  <div class="w-2/3 h-4">
+    <div class="h-2 bg-neutral-900 rounded-2xl"></div>
+  </div>
+  <!-- Line -->
+  <div class="max-w-screen-xl mx-auto px-9">
+    <div class="sm:grid-cols-2 md:grid-cols-3 gap-12 pt-8">
+      <Card
+        url="/singleview"
+        cardimage="img1_1.webp"
+        cardimagealt="Trip 1"
+        cardtitel="DEN FRIE UDSTILLING: MAJOR WORKS"
+        cardtekst="Varighed:"
+        cardtekst2="26.04.25 — 01.06.25"
+        cardtekst3="Tid:"
+        cardtekst4="10.00"
+        cardbuttontekst="Læs mere! →"
+        badgenyt="false"
+        badgerabat="false"
+        badgefaatilbage="false"
+      ></Card>
+    </div>
+  </div>
+</section>
+			<!--Slut på card sektion -->
+ 
+
+					   	
+			
+			<!--start på card sektion -->
+	  </section>
+		   <section id="destinationer" class="pt-20">
+  <div class="flex items-left space-x-4">
+    <h1 class="text-xl sm:text-xl md:text-6xl text-left text-neutral-950 font-serif font-normal pb-6 sm:pb-12 pl-20">
+      Aktuelle udstillinger
+    </h1>
+  </div>
+  <!-- Line -->
+  <div class="w-2/3 h-4">
+    <div class="h-2 bg-neutral-900 rounded-2xl"></div>
+  </div>
+  <!-- Line -->
+  <div class="max-w-screen-xl mx-auto px-9">
+    <div class="sm:grid-cols-2 md:grid-cols-3 gap-12 pt-8">
+      <Card
+        url="/singleview"
+        cardimage="img1_2.webp"
+        cardimagealt="Trip 1"
+        cardtitel="OSLO: SIAN KRISTOFFERSEN: ICE-PLEASURE"
+        cardtekst="Varighed:"
+        cardtekst2="23.05.25 — 21.09.25"
+        cardtekst3="Tid:"
+        cardtekst4="10.00"
+        cardbuttontekst="Læs mere! →"
+        badgenyt="false"
+        badgerabat="false"
+        badgefaatilbage="false"
+      ></Card>
+    </div>
+  </div>
+</section>
+			<!--Slut på card sektion -->
+
+
+			  <!--Start på Accordion sektion -->
+<section class="pt-10 px-4">
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-screen-xl mx-auto px-4 py-8">
+    <!-- Left column -->
+    <div class="flex flex-col space-y-6">
+      <Card
+        url="/singleview"
+        cardimage="img1_3.webp"
+        cardimagealt="Trip 1"
+        cardtitel="THE PERFORMANCE BULLETIN"
+        cardtekst="Varighed:"
+        cardtekst2="05.06.25  —  21.09.25"
+        cardtekst3="Tid:"
+        cardtekst4="15.00"
+        cardbuttontekst="Læs mere! →"
+        badgenyt="false"
+        badgerabat="false"
+        badgefaatilbage="false"
+      ></Card>
+    </div>
+
+    <!-- Right column -->
+    <div class="flex flex-col space-y-6">
+      <Card
+        url="/singleview"
+        cardimage="img1_4.webp"
+        cardimagealt="Trip 1"
+        cardtitel="SANDRA MUJINGA: SLØYFE"
+        cardtekst="Varighed:"
+        cardtekst2="21.06.25  —  31.08.25"
+        cardtekst3="Tid:"
+        cardtekst4="14.00"
+        cardbuttontekst="Læs mere! →"
+        badgenyt="false"
+        badgerabat="false"
+        badgefaatilbage="false"
+      ></Card>
+      <Card
+        url="/singleview"
+        cardimage="img1_5.webp"
+        cardimagealt="Trip 1"
+        cardtitel="OSLO: ELIYAH MESAYER"
+        cardtekst="Varighed:"
+        cardtekst2="23.01.26  —  03.05.26"
+        cardtekst3="Tid:"
+        cardtekst4="17.00"
+        cardbuttontekst="Læs mere! →"
+        badgenyt="false"
+        badgerabat="false"
+        badgefaatilbage="false"
+      ></Card>
+    </div>
+  </div>
+</section>
+   <!--Slut på Accordion sektion -->
 		
+   <!-- start på TIDLIGERE udstillinger sektion -->
+	 <!--start på card sektion -->
+</section>
+<section id="destinationer" class="pt-20">
+<div class="flex items-left space-x-4">
+<h1 class="text-xl sm:text-xl md:text-6xl text-left text-neutral-950 font-serif font-normal pb-6 sm:pb-12 pl-20">
+	TIDLIGERE <br>
+	udstillinger
+</h1>
+</div>
+<!-- Line -->
+<div class="w-2/3 h-4">
+<div class="h-2 bg-neutral-900 rounded-2xl"></div>
+</div>
+<div class="max-w-screen-xl mx-auto px-9">
+<div class="sm:grid-cols-2 md:grid-cols-3 gap-12 pt-8">
+<Card
+url="/singleview"
+cardimage="img1_6.webp"
+cardimagealt="Trip 1"
+cardtitel="OSLO: AMY O’NEILL: THIS’S AND THAT’S"
+cardtekst="Varighed:"
+cardtekst2="07.02.25 —  04.05.25"
+cardtekst3="Tid:"
+cardtekst4="13.00"
+cardbuttontekst="Læs mere! →"
+badgenyt="false"
+badgerabat="false"
+badgefaatilbage="false"
+></Card>
+</div>
+</div>
+</section>
+ <!--Slut på card sektion -->
+
+
+ 	<!--Start på 4Xcard sektion -->
+ <section class="pt-10 px-4">
+	<div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-screen-xl mx-auto px-4 py-8">
+	  <!-- Left column -->
+	  <div class="flex flex-col space-y-6">
+		<Card
+		  url="/singleview"
+		  cardimage="img1_7.webp"
+		  cardimagealt="Trip 1"
+		  cardtitel="HENRIK OLESEN: FOOD CHAIN"
+		  cardtekst="Varighed:"
+		  cardtekst2="22.02.25 —  20.04.25"
+		  cardtekst3="Tid:"
+		  cardtekst4="19.00"
+		  cardbuttontekst="Læs mere! →"
+		  badgenyt="false"
+		  badgerabat="false"
+		  badgefaatilbage="false"
+		></Card>
+		<Card
+		  url="/singleview"
+		  cardimage="img1_8.webp"
+		  cardimagealt="Trip 1"
+		  cardtitel="KOLORISTERNE 2025"
+		  cardtekst="Varighed:"
+		  cardtekst2="12.01.25 —  09.02.25"
+		  cardtekst3="Tid:"
+		  cardtekst4="17.00"
+		  cardbuttontekst="Læs mere! →"
+		  badgenyt="false"
+		  badgerabat="false"
+		  badgefaatilbage="false"
+		></Card>
+	  </div>
+  
+	  <!-- Right column -->
+	  <div class="flex flex-col space-y-6">
+		<Card
+		  url="/singleview"
+		  cardimage="img1_9.webp"
+		  cardimagealt="Trip 1"
+		  cardtitel="OSLO: THE RESTAURANT SEASON "
+		  cardtekst="Varighed:"
+		  cardtekst2="05.10.24 — 19.01.25 "
+		  cardtekst3="Tid:"
+		  cardtekst4="20.00"
+		  cardbuttontekst="Læs mere! →"
+		  badgenyt="false"
+		  badgerabat="false"
+		  badgefaatilbage="false"
+		></Card>
+		<Card
+		  url="/singleview"
+		  cardimage="img1_10.webp"
+		  cardimagealt="Trip 1"
+		  cardtitel="DECEMBERBRISTERNE: EXTRA"
+		  cardtekst="Varighed:"
+		  cardtekst2="30.11.24 —  05.01.25"
+		  cardtekst3="Tid:"
+		  cardtekst4="18.00"
+		  cardbuttontekst="Læs mere! →"
+		  badgenyt="false"
+		  badgerabat="false"
+		  badgefaatilbage="false"
+		></Card>
+	  </div>
+	</div>
+  </section>
+	 <!--Slut på 4Xcard sektion -->
+	 <!-- Slut på TIDLIGERE udstillinger sektion -->
+
 </MainLayout>

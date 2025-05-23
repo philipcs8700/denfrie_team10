@@ -1,5 +1,25 @@
 ---
 // Henter parametrene fra Astro.props
-const { href="#", target="_self"} = Astro.props; 
+const { href="#", target="_self", variant = "tekstlink", size = "default" } = Astro.props;
+ 
+//Definer den styling (Tailwind classes, der gør sig gældende for alle knapper
+const linkStyling="";
+
+
+//Definer den styling (Tailwind classes), der gør sig gældende for de forskellige varianter 
+const variantClasses= {
+    "tekstlink":"underline font-bold",
+    "primary": "bg-red-600 hover:bg-orange-500 text-orange-50 p-3 rounded-xl font-normal font-serif",
+};
+
+//Definer den styling (Tailwind classes), der gør sig gældende for de forskelligeog størrelser.
+const sizeClasses= {
+    "default":"",
+    "large":"",
+    "medium":"",
+    "small":""
+};
 ---
-<a href={href} class="underline" target={target}><slot /></a>
+
+<!--Sæt classes for den pågældende knap sammen ved hjælp af Astros class:list -->
+<a href={href} target={target} class:list={[linkStyling, variantClasses[variant], sizeClasses[size]]}><slot/></a>
