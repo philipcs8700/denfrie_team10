@@ -1,6 +1,53 @@
 ---
+const currentYear = new Date().getFullYear();
 ---
-<div>
-    
-</div>
-  
+<footer class="w-full bg-white text-red-950 mt-10">
+
+  <!-- Øverste orange boks -->
+  <div class="bg-orange-500 w-full h-4"></div>
+
+  <!-- Indhold midtstillet -->
+  <div class="flex flex-col items-center justify-center px-4 py-10 text-center">
+
+    <!-- Billede -->
+    <img src="/logo.jpg" alt="Samarbejdspartner logo" width="120" height="120" class="mb-6" />
+
+    <!-- Horisontal streg -->
+    <hr class="w-24 border-t-2 border-red-950 mb-6" />
+
+    <!-- Links -->
+    <nav>
+      <ul class="flex flex-col sm:flex-row sm:space-x-6 space-y-2 sm:space-y-0 text-base mb-6">
+        <li><a href="#Udstillinger" class="hover:underline">Nyhedsbrev</a></li>
+        <li><a href="#Social" class="hover:underline">Årskort</a></li>
+        <li><a href="#Info" class="hover:underline">Instagram</a></li>
+        <li><a href="#Besøg" class="hover:underline">Facebook</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <!-- Sort streg -->
+  <div class="w-full border-t-2 border-black"></div>
+
+  <!-- Sociale medier -->
+  <div class="flex justify-center items-center py-6 space-x-6">
+    <!-- Facebook -->
+    <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="Facebook" class="hover:text-blue-600">
+      <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24">
+        <path d="M22 12a10 10 0 1 0-11.6 9.87v-6.99H8.7V12h1.7V9.85c0-1.67 1-2.6 2.5-2.6.72 0 1.48.13 1.48.13v1.63H13.8c-.93 0-1.22.58-1.22 1.17V12h2.1l-.34 2.88h-1.76v6.99A10 10 0 0 0 22 12z" />
+      </svg>
+    </a>
+
+    <!-- Instagram -->
+    <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="hover:text-pink-600">
+      <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24">
+        <path d="M7 2C4.2 2 2 4.2 2 7v10c0 2.8 2.2 5 5 5h10c2.8 0 5-2.2 5-5V7c0-2.8-2.2-5-5-5H7zm10 2c1.7 0 3 1.3 3 3v10c0 1.7-1.3 3-3 3H7c-1.7 0-3-1.3-3-3V7c0-1.7 1.3-3 3-3h10zM12 7a5 5 0 1 0 0 10 5 5 0 0 0 0-10zm0 2a3 3 0 1 1 0 6 3 3 0 0 1 0-6zm4.5-.8a1.2 1.2 0 1 0 0 2.4 1.2 1.2 0 0 0 0-2.4z" />
+      </svg>
+    </a>
+  </div>
+
+  <!-- Copyright -->
+  <div class="text-center text-xs text-gray-500 pb-4">
+    Den Frie &copy; {currentYear} <br> Philip Sørensen & Andreas Lausten
+  </div>
+</footer>
