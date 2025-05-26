@@ -1,0 +1,119 @@
+---
+import MainLayout from "../layouts/MainLayout.astro";
+import Button from '../components/Button.astro';
+import Card from '../components/Card.astro';
+import Link from '../components/Link.astro';
+import { Image } from 'astro:assets';
+import thumbsup from "../assets/images/thumbsup.png";
+---
+<MainLayout title="Titel">
+
+  <div class="max-w-6xl mx-auto p-6 pt-40 ">
+    <!-- Step navigation -->
+    <div class="flex justify-between items-center text-xs font-bold tracking-widest uppercase border-b pb-4 mb-6">
+      <div class="flex items-center gap-2">
+        <div class="w-6 h-6 rounded-full bg-black text-white flex items-center justify-center">1</div>
+        Billet
+      </div>
+      <div class="flex items-center gap-2 text-gray-400">
+        <div class="w-6 h-6 rounded-full border border-black text-black flex items-center justify-center">2</div>
+        Dato
+      </div>
+      <div class="flex items-center gap-2 text-gray-400">
+        <div class="w-6 h-6 rounded-full border border-black text-black flex items-center justify-center">3</div>
+        Account
+      </div>
+      <div class="flex items-center gap-2 text-gray-400">
+        <div class="w-6 h-6 rounded-full border border-black text-black flex items-center justify-center">4</div>
+        Opsummering
+      </div>
+      <div class="flex items-center gap-2 text-gray-400">
+        <div class="w-6 h-6 rounded-full border border-black text-black flex items-center justify-center">5</div>
+        Betal
+      </div>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-10 items-start">
+      <!-- Left: image and event info -->
+      <div>
+        <img src="https://via.placeholder.com/600x400" alt="Performance" class="rounded-lg mb-4" />
+        <h2 class="text-2xl font-bold uppercase">ØSLO: Eliyah Mesayer</h2>
+        <div class="mt-2 text-sm text-gray-600 flex items-center gap-4">
+          <span>📅 23.01.26 — 03.05.26</span>
+          <span>🕒 17.00</span>
+        </div>
+        <div class="mt-4 flex gap-2">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/Visa_Inc._logo.svg" class="h-6" />
+          <img src="https://upload.wikimedia.org/wikipedia/commons/a/a4/Apple_Pay_logo.svg" class="h-6" />
+          <img src="https://upload.wikimedia.org/wikipedia/commons/b/b5/PayPal.svg" class="h-6" />
+          <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/Google_Pay_Logo.svg" class="h-6" />
+        </div>
+      </div>
+
+      <!-- Right: ticket form -->
+      <form class="space-y-6">
+        <div class="flex justify-between items-center border-b pb-2">
+          <div>
+            <p class="uppercase font-bold text-sm">Pris</p>
+            <p class="text-lg font-semibold">395 DKK</p>
+          </div>
+          <select class="border rounded-full px-4 py-1 bg-black text-white">
+            <option>0</option>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+          </select>
+        </div>
+        <div class="flex justify-between items-center border-b pb-2">
+          <div>
+            <p class="uppercase font-bold text-sm">18 - 25 år</p>
+            <p class="text-lg font-semibold">395 DKK</p>
+          </div>
+          <select class="border rounded-full px-4 py-1 bg-black text-white">
+            <option>0</option>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+          </select>
+        </div>
+        <div class="flex justify-between items-center border-b pb-2">
+          <div>
+            <p class="uppercase font-bold text-sm">Studerende</p>
+            <p class="text-lg font-semibold">395 DKK</p>
+          </div>
+          <select class="border rounded-full px-4 py-1 bg-black text-white">
+            <option>0</option>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+          </select>
+        </div>
+        <div class="flex justify-between items-center border-b pb-2">
+          <div>
+            <p class="uppercase font-bold text-sm">Pensionist +60 år</p>
+            <p class="text-lg font-semibold">395 DKK</p>
+          </div>
+          <select class="border rounded-full px-4 py-1 bg-black text-white">
+            <option>0</option>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+          </select>
+        </div>
+
+        <button type="submit" class="mt-6 bg-black text-white text-sm uppercase tracking-widest px-6 py-3 rounded-full hover:bg-gray-800">
+          ➕ Tilføj til kurv
+        </button>
+      </form>
+    </div>
+  </div>
+
+</MainLayout>
