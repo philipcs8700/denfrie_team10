@@ -1,0 +1,72 @@
+---
+import MainLayout from "../layouts/MainLayout.astro";
+import Button from '../components/Button.astro';
+import Card from '../components/Card.astro';
+import Link from '../components/Link.astro';
+import { Image } from 'astro:assets';
+import thumbsup from "../assets/images/thumbsup.png";
+---
+<MainLayout title="Titel">
+
+  <div class="max-w-6xl mx-auto p-6 pt-40 ">
+    <!-- Step navigation -->
+    <div class="flex justify-between items-center text-xs font-bold tracking-widest uppercase border-b pb-4 mb-6">
+      <div class="flex items-center gap-2">
+        <div class="w-6 h-6 rounded-full bg-black text-white flex items-center justify-center">1</div>
+        Billet
+      </div>
+      <div class="flex items-center gap-2 text-gray-400">
+        <div class="w-6 h-6 rounded-full bg-black text-white flex items-center justify-center">2</div>
+        Dato
+      </div>
+      <div class="flex items-center gap-2 text-gray-400">
+        <div class="w-6 h-6 rounded-full bg-black text-white flex items-center justify-center">3</div>
+        Account
+      </div>
+      <div class="flex items-center gap-2 text-gray-400">
+        <div class="w-6 h-6 rounded-full border border-black text-black flex items-center justify-center">4</div>
+        Opsummering
+      </div>
+      <div class="flex items-center gap-2 text-gray-400">
+        <div class="w-6 h-6 rounded-full border border-black text-black flex items-center justify-center">5</div>
+        Betal
+      </div>
+    </div>
+
+    <div class="bg-white rounded-lg w-full max-w-5xl p-8 md:p-12">
+    
+        <div class="flex flex-col md:flex-row justify-around gap-12 lg:gap-24 mb-16">
+            <div class="flex flex-col items-center w-full md:w-1/2">
+                <h2 class="text-xl font-bold mb-6">LOGIN</h2>
+                <form class="w-full max-w-sm">
+                    <div class="mb-4">
+                        <input type="email" placeholder="EMAIL" class="w-full p-3 border border-gray-400 rounded-md focus:outline-none focus:ring-2 focus:ring-black">
+                    </div>
+                    <div class="mb-6">
+                        <input type="password" placeholder="PASSWORD" class="w-full p-3 border border-gray-400 rounded-md focus:outline-none focus:ring-2 focus:ring-black">
+                    </div>
+                    <button type="submit" class="w-full bg-black text-white py-3 rounded-md hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-black">Login</button>
+                </form>
+            </div>
+
+            <div class="flex flex-col items-center w-full md:w-1/2">
+                <h2 class="text-xl font-bold mb-6">LOGIN</h2> <form class="w-full max-w-sm">
+                    <div class="mb-4">
+                        <input type="email" placeholder="EMAIL" class="w-full p-3 border border-gray-400 rounded-md focus:outline-none focus:ring-2 focus:ring-black">
+                    </div>
+                    <div class="mb-4">
+                        <input type="password" placeholder="PASSWORD" class="w-full p-3 border border-gray-400 rounded-md focus:outline-none focus:ring-2 focus:ring-black">
+                    </div>
+                    <div class="mb-4">
+                        <input type="password" placeholder="GENTAG PASSWORD" class="w-full p-3 border border-gray-400 rounded-md focus:outline-none focus:ring-2 focus:ring-black">
+                    </div>
+                    <div class="mb-6">
+                        <input type="text" placeholder="BY NUMMER" class="w-full p-3 border border-gray-400 rounded-md focus:outline-none focus:ring-2 focus:ring-black">
+                    </div>
+                    <button type="submit" class="w-full bg-black text-white py-3 rounded-md hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-black">Login</button>
+                </form>
+            </div>
+        </div>
+
+
+</MainLayout>

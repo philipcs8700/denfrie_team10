@@ -2,7 +2,6 @@
 import MainLayout from "../layouts/MainLayout.astro";
 import Button from '../components/Button.astro';
 import Card from '../components/Card.astro';
-import Card3  from '../components/Card3.astro';
 import Link from '../components/Link.astro';
 import { Image } from 'astro:assets';
 import thumbsup from "../assets/images/thumbsup.png";
@@ -36,6 +35,7 @@ import thumbsup from "../assets/images/thumbsup.png";
 		</h1>
 		</div>
 		<div class="h-full w-px bg-gray-900 mx-4"></div>
+
 
 		   <!--Slut på hero unit sektion -->
 
@@ -111,11 +111,11 @@ import thumbsup from "../assets/images/thumbsup.png";
 			<!--Slut på card sektion -->
 
 
-			  <!--Start på Accordion sektion -->
+			  <!--Start på 3Xcard sektion -->
 <section class="pt-10 px-4">
   <div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-screen-xl mx-auto px-4 py-8">
-    <!-- Left column -->
-    <div class="flex flex-col space-y-6">
+    <!-- Left column: Spans two rows -->
+    <div class="md:row-span-2">
       <Card
         url="/singleview"
         cardimage="img1_3.webp"
@@ -132,7 +132,7 @@ import thumbsup from "../assets/images/thumbsup.png";
       ></Card>
     </div>
 
-    <!-- Right column -->
+    <!-- Right column: Two stacked cards -->
     <div class="flex flex-col space-y-6">
       <Card
         url="/singleview"
@@ -165,7 +165,7 @@ import thumbsup from "../assets/images/thumbsup.png";
     </div>
   </div>
 </section>
-   <!--Slut på Accordion sektion -->
+   <!--Slut på 3Xcard sektion -->
 		
    <!-- start på TIDLIGERE udstillinger sektion -->
 	 <!--start på card sektion -->
