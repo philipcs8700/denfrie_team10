@@ -2,20 +2,24 @@
 import MainLayout from "../layouts/MainLayout.astro";
 import Button from '../components/Button.astro';
 import Card from '../components/Card.astro';
+import Card2 from '../components/Card2.astro';
 import Link from '../components/Link.astro';
 import { Image } from 'astro:assets';
 import thumbsup from "../assets/images/thumbsup.png";
+import heading from '../components/Heading.astro'
+
 ---
 <MainLayout title="Titel">
 	
-	<section class="relative h-screen w-full overflow-hidden pt-70">
+	<section class="relative h-screen w-full overflow-hidden pt-70 ">
 		<!-- Full-cover Image -->
 		<img src="hero.svg" 
 			 alt="Hero"
 			 class="absolute inset-50 w-auto h-100 object-cover z-0" />
 	  
+		
 		<!-- Text container with adjusted mobile position -->
-		<div class="relative z-20 w-full h-full text-neutral-950 font-serif font-normal flex flex-col justify-center items-start px-6 sm:px-12 pb-70">
+		<div class="relative z-20 w-full h-full text-neutral-950 xlarge flex flex-col justify-center items-start px-6 sm:px-12 pb-70">
 		  <!-- Den Frie (Responsive position) -->
 		  <h1 class="text-5xl sm:text-4xl md:text-8xl xl:text-8xl leading-tight 
 					 sm:text-left md:text-left xl:text-left sm:mt-12 md:mt-25 xl:mt-10">
@@ -31,7 +35,7 @@ import thumbsup from "../assets/images/thumbsup.png";
 		  <!-- Frie Stemmer (Responsive position) -->
 		  <h1 class="text-5xl sm:text-4xl md:text-8xl xl:text-8xl leading-tight 
 		  sm:text-left md:text-left xl:text-left sm:mt-4 md:mt-8 xl:mt-4">
-	 	Frie Stemmer
+	 			Frie Stemmer
 		</h1>
 		</div>
 		<div class="h-full w-px bg-gray-900 mx-4"></div>
@@ -113,10 +117,10 @@ import thumbsup from "../assets/images/thumbsup.png";
 
 			  <!--Start på 3Xcard sektion -->
 <section class="pt-10 px-4">
-  <div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-screen-xl mx-auto px-4 py-8">
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-screen-xl mx-auto px-4 py-8 ">
     <!-- Left column: Spans two rows -->
-    <div class="md:row-span-2">
-      <Card
+    <div class="md:row-span-2 ">
+      <Card2
         url="/singleview"
         cardimage="img1_3.webp"
         cardimagealt="Trip 1"
@@ -129,7 +133,7 @@ import thumbsup from "../assets/images/thumbsup.png";
         badgenyt="false"
         badgerabat="false"
         badgefaatilbage="false"
-      ></Card>
+      ></Card2>
     </div>
 
     <!-- Right column: Two stacked cards -->
