@@ -1,0 +1,120 @@
+---
+import MainLayout from "../layouts/MainLayout.astro";
+import Button from '../components/Button.astro';
+import Card from '../components/Card.astro';
+import Link from '../components/Link.astro';
+import { Image } from 'astro:assets';
+import thumbsup from "../assets/images/thumbsup.png";
+---
+<MainLayout title="Titel">
+  <div class="min-h-screen flex items-center justify-center px-4 pt-40">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-10 max-w-5xl w-full">
+      <!-- Card 1 -->
+      <div class="max-w-sm mx-auto">
+        <img src="/public/Leo.webp" alt="Performance" class="rounded-4xl" />
+        <h2 class="text-2xl font-bold uppercase">Kristoffer Akselbo FEAT. Leo</h2>
+        <p>
+          Kristoffer Akselbo performer LEO på udstillingen <br />
+          MAJOR WORKS' sidste åbningsdag
+        </p>
+        <div class="mt-2 text-sm text-gray-600 flex items-center gap-4">
+          <span>📅 01.06.2025</span>
+          <span>🕒 12.00 -15.00</span>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="max-w-sm mx-auto">
+        <img src="/public/eva_mag.webp" alt="Performance" class="rounded-4xl" />
+        <h2 class="text-2xl font-bold uppercase">Bulletin: Eva Mag</h2>
+        <p>
+          Éva Mag: At First, I Feel I’ve Got Nothing
+          Otte performere former våd ler og tekstil.
+        </p>
+        <div class="mt-2 text-sm text-gray-600 flex items-center gap-4">
+          <span>📅 01.06.2025</span>
+          <span>🕒 14.00 - 18.00</span>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="max-w-sm mx-auto">
+        <img src="/public/seimi.webp" alt="Performance" class="rounded-4xl" />
+        <h2 class="text-2xl font-bold uppercase">Bulletin: Semim Nørregaard</h2>
+        <p>
+          Seimi Nørregaard inviterer  dig, én-til-én, til at iscenesætte dig selv som et kunstværk.
+        </p>
+        <div class="mt-2 text-sm text-gray-600 flex items-center gap-4">
+          <span>📅 05.06.2025</span>
+          <span>🕒 14.30 - 18.30</span>
+        </div>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="max-w-sm mx-auto">
+        <img src="/public/hyphea.webp" alt="Performance" class="rounded-4xl" />
+        <h2 class="text-2xl font-bold uppercase">Bulletin: Beyond Darkness</h2>
+        <p>
+          HYPHEA er en gastronomisk og kunstnerisk oplevelse, der dykker ned i svampenes verden.
+        </p>
+        <div class="mt-2 text-sm text-gray-600 flex items-center gap-4">
+          <span>📅 05.06.2025</span>
+          <span>🕒 15.00 - 16.00</span>
+        </div>
+      </div>
+
+      <!-- Card 5 -->
+      <div class="max-w-sm mx-auto">
+        <img src="/public/eau_pernice.webp" alt="Performance" class="rounded-4xl" />
+        <h2 class="text-2xl font-bold uppercase">Bulletin: Eau Pernice</h2>
+        <p>
+          Performanceværket  af Eau Pernice Mellemtiden er en instruktionsperformance, der tager publikum med på en guidet tur gennem det offentlige rum.
+        </p>
+        <div class="mt-2 text-sm text-gray-600 flex items-center gap-4">
+          <span>📅 06.06.2025</span>
+          <span>🕒 17.00 - 20.00</span>
+        </div>
+      </div>
+
+      <!-- Card 6 -->
+      <div class="max-w-sm mx-auto">
+        <img src="/public/rasmus_rohling.webp" alt="Performance" class="rounded-4xl" />
+        <h2 class="text-2xl font-bold uppercase">Bulletin: Rasmus Røhling</h2>
+        <p>
+          Rasmus Røhling’s PERSPECTIVE AS SYMBOLIC FORM. Værket undersøger performativitetens tvetydige betydninger og dens udvidede perspektiver.
+        </p>
+        <div class="mt-2 text-sm text-gray-600 flex items-center gap-4">
+          <span>📅 07.06.2025</span>
+          <span>🕒 13.00 - 14.30</span>
+        </div>
+      </div>
+
+      <!-- Card 7 -->
+      <div class="max-w-sm mx-auto">
+        <img src="/public/card7.webp" alt="Performance" class="rounded-4xl" />
+        <h2 class="text-2xl font-bold uppercase">Bulletin: Naturens Stemme</h2>
+        <p>
+          Lydkunst og video værk med naturstemmer og skovlyde i immersive format.
+        </p>
+        <div class="mt-2 text-sm text-gray-600 flex items-center gap-4">
+          <span>📅 08.06.2025</span>
+          <span>🕒 11.00 - 13.00</span>
+        </div>
+      </div>
+
+      <!-- Card 8 -->
+      <div class="max-w-sm mx-auto">
+        <img src="/public/card8.webp" alt="Performance" class="rounded-4xl" />
+        <h2 class="text-2xl font-bold uppercase">Bulletin: Kroppens Arkiv</h2>
+        <p>
+          Et kropsligt arkiv gennem dans og tale, hvor personlige historier deles.
+        </p>
+        <div class="mt-2 text-sm text-gray-600 flex items-center gap-4">
+          <span>📅 09.06.2025</span>
+          <span>🕒 16.00 - 17.30</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</MainLayout>
+
