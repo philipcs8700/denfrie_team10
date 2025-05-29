@@ -1,0 +1,79 @@
+---
+import MainLayout from "../layouts/MainLayout.astro";
+import Button from '../components/Button.astro';
+import Card from '../components/Card.astro';
+import Link from '../components/Link.astro';
+import { Image } from 'astro:assets';
+import thumbsup from "../assets/images/thumbsup.png";
+---
+<MainLayout title="Titel">
+
+    <div class="max-w-6xl mx-auto p-6 pt-40 ">
+        <!-- Step navigation -->
+        <div class="flex justify-between items-center text-xs font-bold tracking-widest uppercase border-b pb-4 mb-6">
+          <div class="flex items-center gap-2 text-gray-400">
+            <div class="w-6 h-6 rounded-full bg-black text-white flex items-center justify-center">1</div>
+            Kurv
+          </div>
+          <div class="flex items-center gap-2 text-gray-400">
+            <div class="w-6 h-6 rounded-full bg-black text-white flex items-center justify-center">2</div>
+            Login
+          </div>
+          <div class="flex items-center gap-2">
+            <div class="w-6 h-6 rounded-full bg-black text-white flex items-center justify-center">3</div>
+            Betaling
+          </div>
+          
+        </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 p-8 bg-white text-black">
+        <!-- Fakturering -->
+        <div class="bg-gray-100 p-6 rounded-xl">
+          <h2 class="text-lg font-bold tracking-widest mb-4">FAKTURERING</h2>
+          <p class="text-sm">NAVN</p>
+          <p class="text-sm">EMAIL</p>
+          <p class="text-sm">TLF NR</p>
+          <p class="text-sm">POST NR</p>
+        </div>
+      
+        <!-- Din ordre -->
+        <div class="bg-gray-100 p-6 rounded-xl">
+          <h2 class="text-lg font-bold tracking-widest mb-4">DIN ORDRE</h2>
+          <p class="text-sm mb-2">1 X VOKSEN - ENTREBILLET</p>
+          <p class="text-base font-bold mb-4">360,00 DKK</p>
+          <hr class="mb-4" />
+          <p class="text-sm">VARETOTAL:</p>
+          <p class="text-base font-bold">360,00 DKK</p>
+        </div>
+      
+        <!-- Rabatkode -->
+        <div class="bg-gray-100 p-6 rounded-xl">
+          <h2 class="text-lg font-bold tracking-widest mb-4">RABATKODE</h2>
+          <p class="text-sm mb-4">Har du en rabatkode, kan du bruge det til at betale for dine varer</p>
+          <button class="border border-black rounded-full px-6 py-2 text-sm hover:bg-black hover:text-white transition">ANVEND RABATKODE</button>
+        </div>
+      
+        <!-- Handelsbetingelser & Betaling -->
+        <div class="bg-gray-100 p-6 rounded-xl flex flex-col justify-between">
+          <div class="space-y-4">
+            <label class="flex items-start space-x-2 text-sm font-semibold">
+              <input type="checkbox" class="mt-1">
+              <span>Jeg accepterer handelsbetingelserne<br>
+                <a href="#" class="underline text-xs font-normal">Læs vores handelsbetingelser her</a>
+              </span>
+            </label>
+      
+            <label class="flex items-start space-x-2 text-sm">
+              <input type="checkbox" class="mt-1">
+              <span>
+                Ja tak, jeg vil gerne modtage markedsføring 1 - 2 gange om måneden fra Den Frie, herunder skræddersyede nyhedsbreve og SMS om udstillinger, tilbud eller arrangementer. Du kan til enhver tid framelde dig markedsføring igen.<br>
+                <a href="#" class="underline text-xs font-normal">Læs vores handelsbetingelser her</a>
+              </span>
+            </label>
+          </div>
+          <div class="mt-6 self-end">
+            <button class="bg-[#d6c49d] text-black rounded-full px-6 py-2 text-lg font-medium shadow-md hover:shadow-lg transition">Betal her</button>
+          </div>
+        </div>
+      </div>
+</MainLayout>
