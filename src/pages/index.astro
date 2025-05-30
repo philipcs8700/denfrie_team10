@@ -9,37 +9,45 @@ import thumbsup from "../assets/images/thumbsup.png";
 import heading from '../components/Heading.astro'
 ---
 <MainLayout title="Titel">
-			   <!--start på hero unit sektion -->
-		<section class="relative h-screen w-full overflow-hidden pt-70 ">
-		<!-- Full-cover Image -->
-		<img src="hero.svg" 
-			 alt="Hero"
-			 class="absolute inset-50 w-auto h-100 object-cover z-0" />
-	  
-				<!-- Text container with adjusted mobile position -->
-		<div class="relative z-20 w-full h-full text-neutral-950 xlarge flex flex-col justify-center items-start px-6 sm:px-12 pb-70">
-		  <!-- Den Frie (Responsive position) -->
-		  <h1 class="text-5xl sm:text-4xl md:text-8xl xl:text-8xl leading-tight 
-					 sm:text-left md:text-left xl:text-left sm:mt-12 md:mt-25 xl:mt-10 font-anton">
-				Den Frie
-		  </h1>
-	  
-		  <!-- Fri Kunst (Responsive position) -->
-		  <h1 class="text-5xl sm:text-4xl md:text-8xl xl:text-8xl leading-tight 
-					 sm:text-left md:text-left xl:text-left sm:mt-4 md:mt-8 xl:mt-4 font-anton">
-				Fri Kunst 
-		  </h1>
+	<section class="relative h-screen w-full overflow-hidden bg-black text-[#D9BC80] font-anton">
+        
+        <!-- Background Graphic -->
+        <img src="/hero_bg.png" alt="P" class="absolute top-0 right-0 h-full w-3/7 object-cover z-0 hidden lg:block" />
 
-		  <!-- Frie Stemmer (Responsive position) -->
-		  <h1 class="text-5xl sm:text-4xl md:text-8xl xl:text-8xl leading-tight 
-		  sm:text-left md:text-left xl:text-left sm:mt-4 md:mt-8 xl:mt-4 font-anton">
-	 			Frie Stemmer
-		</h1>
-		</div>
-		<div class="h-full w-px bg-gray-900 mx-4"></div>
+        <!-- Logo Graphic -->
+        <img src="/logo.png" alt="P" class="absolute top-1/2 left-3/5 transform -translate-x-1/2 -translate-y-1/2 h-3/5 w-auto object-cover z-10 hidden lg:block" />
 
-
-		   <!--Slut på hero unit sektion -->
+        <!-- Text + Buttons -->
+        <div class="relative z-10 h-full w-full flex flex-col justify-center px-6 sm:px-12 lg:max-w-5xl">
+          <h1 class="text-5xl sm:text-6xl md:text-7xl lg:text-9xl leading-tight tracking-tight w-fit mb-4">
+            DEN FRIE
+          </h1>
+          <h1 class="text-5xl sm:text-6xl md:text-7xl lg:text-9xl leading-tight tracking-tight w-fit mb-4">
+            FRI KUNST
+          </h1>
+          <h1 class="text-5xl sm:text-6xl md:text-7xl lg:text-9xl leading-tight tracking-tight w-fit mb-10">
+            FRIE STEMMER
+          </h1>
+      
+          <div class="flex gap-4">
+            <a href="/billetter" class="px-6 py-3 border border-[#D9BC80] rounded-full text-white hover:bg-[#D9BC80] hover:text-black transition">
+              Køb billet til udstillingen her
+            </a>
+            <a href="/events" class="px-6 py-3 bg-[#D9BC80] rounded-full text-black hover:bg-white hover:text-black transition">
+              Se events her
+            </a>
+          </div>
+        </div>
+      
+        <!-- Opening Hours -->
+        <div class="absolute bottom-8 right-8 bg-black text-white p-4 font-sans text-xs tracking-wide">
+          <h2 class="font-bold text-sm mb-2">ÅBNINGSTIDER</h2>
+          <p>MAN-TIRS: LUKKET</p>
+          <p>ONS-FRE: 12.00 — 18.00</p>
+          <p>TORS: 12.00 — 21.00</p>
+          <p>LØR-SØN: 10.00 — 18.00</p>
+        </div>
+    </section>
 
 		   	<!--start på card sektion -->
 	  </section>
