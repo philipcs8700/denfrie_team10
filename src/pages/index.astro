@@ -7,34 +7,32 @@ import Link from '../components/Link.astro';
 import { Image } from 'astro:assets';
 import thumbsup from "../assets/images/thumbsup.png";
 import heading from '../components/Heading.astro'
-
 ---
 <MainLayout title="Titel">
-	
-	<section class="relative h-screen w-full overflow-hidden pt-70 ">
+			   <!--start på hero unit sektion -->
+		<section class="relative h-screen w-full overflow-hidden pt-70 ">
 		<!-- Full-cover Image -->
 		<img src="hero.svg" 
 			 alt="Hero"
 			 class="absolute inset-50 w-auto h-100 object-cover z-0" />
 	  
-		
-		<!-- Text container with adjusted mobile position -->
+				<!-- Text container with adjusted mobile position -->
 		<div class="relative z-20 w-full h-full text-neutral-950 xlarge flex flex-col justify-center items-start px-6 sm:px-12 pb-70">
 		  <!-- Den Frie (Responsive position) -->
 		  <h1 class="text-5xl sm:text-4xl md:text-8xl xl:text-8xl leading-tight 
-					 sm:text-left md:text-left xl:text-left sm:mt-12 md:mt-25 xl:mt-10">
+					 sm:text-left md:text-left xl:text-left sm:mt-12 md:mt-25 xl:mt-10 font-anton">
 				Den Frie
 		  </h1>
 	  
 		  <!-- Fri Kunst (Responsive position) -->
 		  <h1 class="text-5xl sm:text-4xl md:text-8xl xl:text-8xl leading-tight 
-					 sm:text-left md:text-left xl:text-left sm:mt-4 md:mt-8 xl:mt-4">
+					 sm:text-left md:text-left xl:text-left sm:mt-4 md:mt-8 xl:mt-4 font-anton">
 				Fri Kunst 
 		  </h1>
 
 		  <!-- Frie Stemmer (Responsive position) -->
 		  <h1 class="text-5xl sm:text-4xl md:text-8xl xl:text-8xl leading-tight 
-		  sm:text-left md:text-left xl:text-left sm:mt-4 md:mt-8 xl:mt-4">
+		  sm:text-left md:text-left xl:text-left sm:mt-4 md:mt-8 xl:mt-4 font-anton">
 	 			Frie Stemmer
 		</h1>
 		</div>
@@ -47,9 +45,9 @@ import heading from '../components/Heading.astro'
 	  </section>
 		   <section id="destinationer" class="pt-20">
   <div class="flex items-left space-x-4">
-    <h1 class="text-xl sm:text-xl md:text-6xl text-left text-neutral-950 font-serif font-normal pb-6 sm:pb-12 pl-20">
+    <h1 class="text-xl sm:text-xl md:text-6xl text-left text-neutral-950 font-poppins font-normal pb-6 sm:pb-12 pl-20">
       Aktuelle udstillinger
-    </h1>
+    </h1> 
   </div>
   <!-- Line -->
   <div class="w-2/3 h-4">
@@ -84,8 +82,8 @@ import heading from '../components/Heading.astro'
 	  </section>
 		   <section id="destinationer" class="pt-20">
   <div class="flex items-left space-x-4">
-    <h1 class="text-xl sm:text-xl md:text-6xl text-left text-neutral-950 font-serif font-normal pb-6 sm:pb-12 pl-20">
-      Aktuelle udstillinger
+    <h1 class="text-xl sm:text-xl md:text-6xl text-left text-neutral-950 font-poppins font-normal pb-6 sm:pb-12 pl-20">
+      Kommende udstillinger
     </h1>
   </div>
   <!-- Line -->
