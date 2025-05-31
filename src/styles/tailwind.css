@@ -13,6 +13,7 @@
   --font-anton: "Anton", sans-serif; 
   --font-poppins: "Poppins", sans-serif;
   --font-archivo: "Archivo", sans-serif;
+  --color-gold500: #CCB57E;
 }
 
 @layer base {
