@@ -1,0 +1,34 @@
+---
+const { url="#", cardimage="", cardimagealt="", cardtitel="", cardtekst="", cardbuttontekst="", cardtekst2="", cardtekst3="", cardtekst4="",
+badgenyt="false", badgerabat="false", badgefaatilbage="false", } = Astro.props; 
+import Link from '../components/Link.astro';
+import Heading from '../components/Heading.astro';
+---
+
+
+<div class="card rounded-4xl bg-base-100 w-full @container font-archivo">
+  <figure class="relative px-10 pt-10">
+  {(badgenyt === "true") && <div class="badge badge-secondary absolute top-4 left-2">New</div>}
+  {(badgerabat !== "false") && <div class="badge badge-warning absolute rounded-full bottom-4 right-13 rotate-0 hover:rotate-6 transition-all"><span>{badgerabat} discount!</span></div>}
+  {(badgefaatilbage === "true") && <div class="badge badge-soft badge-neutral @sm:bagde-xl absolute top-9 right-14"><span>Almost soldout</span></div>}
+  <a href="#"> 
+    <img 
+      class="rounded-4xl w-full h-[400px] object-cover hover:scale-95 duration-300 ease-in-out" 
+      src={cardimage}
+      alt={cardimagealt} 
+    />
+  </a> 
+  </figure>
+  <div class="card-body p-5">
+    <Heading htmlheading="h1" size="mediumbold" stylingclasses="card-title">{cardtitel}</Heading>
+    <Heading htmlheading="p" size="smallbold" stylingclasses="card-tekst">{cardtekst}</Heading>
+    <Heading htmlheading="h2" size="smallbold" stylingclasses="card-tekst">{cardtekst2}</Heading>
+    <Heading htmlheading="h3" size="small" stylingclasses="card-tekst2">{cardtekst3}</Heading>
+    <Heading htmlheading="h4" size="smallbold" stylingclasses="card-tekst3">{cardtekst4}</Heading>
+    <Heading htmlheading="h5" size="small" stylingclasses="card-tekst4">{cardtekst5}</Heading>
+   
+    <div class="card-actions justify-end p-5">
+    <Link href={url} variant="primary">{cardbuttontekst}</Link>
+  </div>
+  </div>
+</div>

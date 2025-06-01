@@ -2,11 +2,83 @@
 import MainLayout from "../layouts/MainLayout.astro";
 import Button from '../components/Button.astro';
 import Card from '../components/Card.astro';
+import card3 from '../components/card3.astro';
 import Link from '../components/Link.astro';
 import { Image } from 'astro:assets';
 import thumbsup from "../assets/images/thumbsup.png";
 ---
 <MainLayout title="Titel">
+  <section class="pt-10 px-4">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-screen-xl mx-auto px-4 py-8">
+      <!-- Left column -->
+      <div class="flex flex-col space-y-6">
+      <Card
+        url="/singleview"
+        cardimage="img1_7.webp"
+        cardimagealt="Trip 1"
+        cardtitel="HENRIK OLESEN: FOOD CHAIN"
+        cardtekst="brødtext:"
+        cardtekst2="Varighed:"
+        cardtekst3="22.02.25 —  20.04.25:"
+        cardtekst4="Tid:"
+        cardtekst5="19.00"
+        cardbuttontekst="Læs mere →"
+        badgenyt="false"
+        badgerabat="false"
+        badgefaatilbage="false"
+      ></Card>
+      <Card
+        url="/singleview"
+        cardimage="img1_8.webp"
+        cardimagealt="Trip 1"
+        cardtitel="KOLORISTERNE 2025"
+        cardtekst="Varighed:"
+        cardtekst2="12.01.25 —  09.02.25"
+        cardtekst3="Tid:"
+        cardtekst4="17.00"
+        cardbuttontekst="Læs mere →"
+        badgenyt="false"
+        badgerabat="false"
+        badgefaatilbage="false"
+      ></Card>
+      </div>
+    
+      <!-- Right column -->
+      <div class="flex flex-col space-y-6">
+      <Card
+        url="/singleview"
+        cardimage="img1_9.webp"
+        cardimagealt="Trip 1"
+        cardtitel="OSLO: THE RESTAURANT SEASON "
+        cardtekst="Varighed:"
+        cardtekst2="05.10.24 — 19.01.25 "
+        cardtekst3="Tid:"
+        cardtekst4="20.00"
+        cardbuttontekst="Læs mere →"
+        badgenyt="false"
+        badgerabat="false"
+        badgefaatilbage="false"
+      ></Card>
+      <Card
+        url="/singleview"
+        cardimage="img1_10.webp"
+        cardimagealt="Trip 1"
+        cardtitel="DECEMBERBRISTERNE: EXTRA"
+        cardtekst="Varighed:"
+        cardtekst2="30.11.24 —  05.01.25"
+        cardtekst3="Tid:"
+        cardtekst4="18.00"
+        cardbuttontekst="Læs mere →"
+        badgenyt="false"
+        badgerabat="false"
+        badgefaatilbage="false"
+      ></Card>
+      </div>
+    </div>
+    </section>
+     <!--Slut på 4Xcard sektion -->
+
+
   <div class="min-h-screen flex items-center justify-center px-4 pt-40">
     <div class="grid grid-cols-1 md:grid-cols-2 gap-10 max-w-5xl w-full">
       <!-- Card 1 -->
