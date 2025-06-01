@@ -1,0 +1,39 @@
+---
+import MainLayout from "../layouts/MainLayout.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+---
+<MainLayout title="koloristerne">
+
+    <div class="p-6 mt-12 flex flex-col md:flex-row items-start justify-center max-w-full">
+
+      <!-- Billede fylder helt ud til venstre kant med hover og rundede hjørner -->
+      <div class="flex-shrink-0 w-full md:w-1/2">
+        <img 
+          src="/public/decemberisterne.webp" 
+          alt="Decemberisterne" 
+          class="w-full h-auto rounded-xl" 
+        />
+        <!-- Tekst under billedet -->
+        <p class="text-xs text-left text-neutral-600 mt-2 max-w-xs italic">
+         Augustinus Fonden, Knud Højgaard Fonden, Statens Kunstfond </p>
+      </div>
+
+      <!-- Tekstindhold -->
+      <div class="text-center md:text-left max-w-md md:ml-8 mt-6 md:mt-0">
+        <h1 class="text-2xl font-bold text-neutral-900 mb-2">DECEMBERRISTERNE: EXTRALYS</h1>
+
+        <!-- streg --->
+        <div class="w-80 mx-0 border-b-2 border-black mt-3 mb-4"></div>
+
+        <p class="text-sm leading-relaxed tracking-normal">
+        Kunstnersammenslutningen Decembristerne undersøger med udstillingen Extralys lysets konkrete, sanselige og metaforiske kvaliteter og den afgørende forbindelse, der altid har været mellem lys og billedkunst. Konceptet er, at det elektriske lys på Den Frie skal være slukket i hele udstillingsperioden. 
+        <br><br>Til gengæld rettes opmærksomheden mod det naturlige lysindfald, som kommer ind gennem bygningens store tagvinduer, og hvordan lyset gradvis ændrer sig i løbet af dagen. 
+        Kunstnerne på udstillingen forholder sig vidt forskelligt til den anderledes omskiftelige lyssituation. Nogle kunstnere har medbragt separate lyskilder, der belyser deres værk udefra, mens andre har integreret lys, så deres værk oplyses indefra. 
+        <br><br>Udover de faste medlemmer af sammenslutningen deltager der i år 9 gæstekunstnere fra forskellige generationer, tilgange og arbejdsmåder. 
+        </p>
+
+      </div>
+    </div>
+
+</MainLayout>

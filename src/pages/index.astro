@@ -13,28 +13,18 @@ import heading from '../components/Heading.astro';
     <!-- Background Graphic -->
     <img src="/hero_bg.png" alt="P" class="absolute top-0 right-0 h-full w-3/7 object-cover z-0 hidden lg:block" />
 
-    <!-- Logo Graphic -->
+    <!-- Logo -->
     <img src="/logo.png" alt="P" class="absolute top-1/2 left-3/5 transform -translate-x-1/2 -translate-y-1/2 h-3/5 w-auto object-cover z-10 hidden lg:block" />
 
     <!-- Text + Buttons -->
     <div class="relative z-10 h-full w-full flex flex-col justify-center px-6 sm:px-12 lg:max-w-5xl">
-      <h1 class="text-5xl sm:text-6xl md:text-7xl lg:text-9xl leading-tight tracking-tight w-fit mb-4">
-        DEN FRIE
-      </h1>
-      <h1 class="text-5xl sm:text-6xl md:text-7xl lg:text-9xl leading-tight tracking-tight w-fit mb-4">
-        FRI KUNST
-      </h1>
-      <h1 class="text-5xl sm:text-6xl md:text-7xl lg:text-9xl leading-tight tracking-tight w-fit mb-10">
-        FRIE STEMMER
-      </h1>
+      <h1 class="text-5xl sm:text-6xl md:text-7xl lg:text-9xl leading-tight tracking-tight w-fit mb-4">DEN FRIE</h1>
+      <h1 class="text-5xl sm:text-6xl md:text-7xl lg:text-9xl leading-tight tracking-tight w-fit mb-4">FRI KUNST</h1>
+      <h1 class="text-5xl sm:text-6xl md:text-7xl lg:text-9xl leading-tight tracking-tight w-fit mb-10">FRIE STEMMER</h1>
 
       <div class="flex gap-4">
-        <Link href="/form_1" variant="herobutton" size="large">
-          Køb billet til udstillingen her
-        </Link>
-        <Link href="/listeform" variant="goldbutton" size="large">
-          Se events her
-        </Link>
+        <Link href="/form_1" variant="herobutton" size="large">Køb billet til udstillingen her</Link>
+        <Link href="/social" variant="goldbutton" size="large">Se events her</Link>
       </div>
     </div>
 
@@ -48,12 +38,10 @@ import heading from '../components/Heading.astro';
     </div>
   </section>
 
+  <!-- Aktuelle udstillinger -->
   <section id="destinationer" class="pt-20">
-    <!-- Overskrift -->
     <div class="pl-20">
-      <h1 class="text-xl sm:text-xl md:text-6xl text-left text-neutral-950 font-poppins font-normal pb-4">
-        Aktuelle udstillinger
-      </h1>
+      <h1 class="text-xl sm:text-xl md:text-6xl text-left text-neutral-950 font-poppins font-normal pb-4">Aktuelle udstillinger</h1>
     </div>
   </section>
 
@@ -72,17 +60,65 @@ import heading from '../components/Heading.astro';
         badgenyt="false"
         badgerabat="false"
         badgefaatilbage="false"
-      ></Card>
+      />
     </div>
   </div>
 
-  <img src="/public/arskort.webp" alt="årskort" />
+  <!-- Årskort sektion -->
+<a href="/form_1" aria-label="Køb årskort">
+  <img src="/public/arskort.webp" alt="årskort" class="cursor-pointer" />
+</a>
 
+
+  <!-- Anmeldelse sektion -->
+<section class="bg-white py-16 px-6 sm:px-12">
+  <div class="max-w-screen-xl mx-auto">
+    <h2 class="text-3xl sm:text-4xl font-bold font-poppins text-neutral-900 mb-10 text-center">Anmeldelser fra vores besøgende</h2>
+    <div class="grid gap-8 md:grid-cols-3">
+      <!-- Anmeldelse 1 -->
+      <div class="bg-neutral-100 p-6 rounded-2xl shadow-lg">
+        <div class="flex items-center mb-2">
+          <span class="text-gold500 text-2xl">★★★★★</span>
+        </div>
+        <p class="text-lg text-neutral-800 mb-4 italic">"En dybt bevægende oplevelse – udstillingerne rammer både hjertet og intellektet."</p>
+        <p class="text-sm font-semibold text-neutral-600">Signe</p>
+      </div>
+      <!-- Anmeldelse 2 -->
+      <div class="bg-neutral-100 p-6 rounded-2xl shadow-lg">
+        <div class="flex items-center mb-2">
+          <span class="text-gold500 text-2xl">★★★★</span>
+        </div>
+        <p class="text-lg text-neutral-800 mb-4 italic">"Et fristed for kunstens frie stemmer. Den Frie er essentiel for dansk samtidskunst." Kan klart anbefales!</p>
+        <p class="text-sm font-semibold text-neutral-600">Jacob</p>
+      </div>
+      <!-- Anmeldelse 3 -->
+      <div class="bg-neutral-100 p-6 rounded-2xl shadow-lg">
+        <div class="flex items-center mb-2">
+          <span class="text-gold500 text-2xl">★★★★★</span>
+        </div>
+        <p class="text-lg text-neutral-800 mb-4 italic">"Kurateringen er i verdensklasse. En oplevelse jeg vender tilbage til igen og igen."</p>
+        <p class="text-sm font-semibold text-neutral-600">Jette</p>
+      </div>
+    </div>
+    <div class="mt-10 text-center">
+      <Link
+        href="https://www.tripadvisor.dk/Attraction_Review-g189541-d246334-Reviews-Den_Frie-Copenhagen_Zealand.html"
+        size="large"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="inline-block bg-black text-white px-6 py-3 rounded-md font-semibold transition-colors duration-300 hover:bg-gold500 hover:text-black"
+      >
+        Se flere anmeldelser
+      </Link>
+    </div>
+  </div>
+</section>
+
+
+  <!-- Kommende udstillinger -->
   <section id="destinationer" class="pt-20">
     <div class="flex items-left space-x-4">
-      <h1 class="text-xl sm:text-xl md:text-6xl text-left text-neutral-950 font-poppins font-normal pb-6 sm:pb-12 pl-20">
-        Kommende udstillinger
-      </h1>
+      <h1 class="text-xl sm:text-xl md:text-6xl text-left text-neutral-950 font-poppins font-normal pb-6 sm:pb-12 pl-20">Kommende udstillinger</h1>
     </div>
 
     <div class="max-w-screen-xl mx-auto px-9">
@@ -100,15 +136,14 @@ import heading from '../components/Heading.astro';
           badgenyt="false"
           badgerabat="false"
           badgefaatilbage="false"
-        ></Card>
+        />
       </div>
     </div>
   </section>
 
   <section class="pt-10 px-4">
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-screen-xl mx-auto px-4 py-8 ">
-      <!-- Left column: Spans two rows -->
-      <div class="md:row-span-2 ">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-screen-xl mx-auto px-4 py-8">
+      <div class="md:row-span-2">
         <Card2
           url="/bulletin"
           cardimage="bulletin.webp"
@@ -122,10 +157,8 @@ import heading from '../components/Heading.astro';
           badgenyt="false"
           badgerabat="false"
           badgefaatilbage="false"
-        ></Card2>
+        />
       </div>
-
-      <!-- Right column: Two stacked cards -->
       <div class="flex flex-col space-y-6">
         <Card
           url="/sløyfe"
@@ -140,7 +173,7 @@ import heading from '../components/Heading.astro';
           badgenyt="false"
           badgerabat="false"
           badgefaatilbage="false"
-        ></Card>
+        />
         <Card
           url="/eliyahmesayer"
           cardimage="eliyahmesayer.webp"
@@ -154,16 +187,15 @@ import heading from '../components/Heading.astro';
           badgenyt="false"
           badgerabat="false"
           badgefaatilbage="false"
-        ></Card>
+        />
       </div>
     </div>
   </section>
 
+  <!-- Tidligere udstillinger -->
   <section id="destinationer" class="pt-20">
     <div class="flex items-left space-x-4">
-      <h1 class="text-xl sm:text-xl md:text-6xl text-left text-neutral-950 font-poppins font-normal pb-6 sm:pb-12 pl-20">
-        Tidligere udstillinger
-      </h1>
+      <h1 class="text-xl sm:text-xl md:text-6xl text-left text-neutral-950 font-poppins font-normal pb-6 sm:pb-12 pl-20">Tidligere udstillinger</h1>
     </div>
   </section>
 
@@ -182,13 +214,12 @@ import heading from '../components/Heading.astro';
         badgenyt="false"
         badgerabat="false"
         badgefaatilbage="false"
-      ></Card>
+      />
     </div>
   </div>
 
   <section class="pt-10 px-4">
     <div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-screen-xl mx-auto px-4 py-8">
-      <!-- Left column -->
       <div class="flex flex-col space-y-6">
         <Card
           url="/foodchain"
@@ -203,30 +234,29 @@ import heading from '../components/Heading.astro';
           badgenyt="false"
           badgerabat="false"
           badgefaatilbage="false"
-        ></Card>
+        />
         <Card
-        url="/koloristerne"
-        cardimage="koloristerne.webp"
-        cardimagealt="Trip 1"
-        cardtitel="KOLORISTERNE 2025"
-        cardtekst="Dato:"
-        cardtekst2="07.02.25 —  04.05.25"
-        cardtekst3="Tid:"
-        cardtekst4="13.00"
-        cardbuttontekst="Læs mere →"
-        badgenyt="false"
-        badgerabat="false"
-        badgefaatilbage="false"
-      ></Card>
+          url="/koloristerne"
+          cardimage="koloristerne.webp"
+          cardimagealt="Trip 1"
+          cardtitel="KOLORISTERNE 2025"
+          cardtekst="Dato:"
+          cardtekst2="07.02.25 —  04.05.25"
+          cardtekst3="Tid:"
+          cardtekst4="13.00"
+          cardbuttontekst="Læs mere →"
+          badgenyt="false"
+          badgerabat="false"
+          badgefaatilbage="false"
+        />
       </div>
 
-      <!-- Right column -->
       <div class="flex flex-col space-y-6">
         <Card
           url="/restaurant"
           cardimage="therestaurant.webp"
           cardimagealt="Trip 1"
-          cardtitel="THE RESTAUANT SEASON"
+          cardtitel="THE RESTAUANT SEASON 2"
           cardtekst="Dato:"
           cardtekst2="05.10.24 — 19.01.25 "
           cardtekst3="Tid:"
@@ -235,7 +265,7 @@ import heading from '../components/Heading.astro';
           badgenyt="false"
           badgerabat="false"
           badgefaatilbage="false"
-        ></Card>
+        />
         <Card
           url="/decemberisterne"
           cardimage="decemberisterne.webp"
@@ -249,30 +279,23 @@ import heading from '../components/Heading.astro';
           badgenyt="false"
           badgerabat="false"
           badgefaatilbage="false"
-        ></Card>
+        />
       </div>
     </div>
   </section>
 
- <script>
-  document.addEventListener("DOMContentLoaded", function () {
-    const correctPassword = "team10";
-
-    const accessGranted = localStorage.getItem("accessGranted");
-    if (accessGranted === "true") {
-      // Adgang allerede givet, gør ingenting
-      return;
-    }
-
-    const input = prompt("Indtast kode:");
-    if (input === correctPassword) {
-      localStorage.setItem("accessGranted", "true");
-    } else {
-      document.body.innerHTML = "<h1>Adgang nægtet</h1>";
-    }
-  });
-</script>
-
-
-
+  <!-- Password Protection -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const correctPassword = "team10";
+      const accessGranted = localStorage.getItem("accessGranted");
+      if (accessGranted === "true") return;
+      const input = prompt("Indtast kode:");
+      if (input === correctPassword) {
+        localStorage.setItem("accessGranted", "true");
+      } else {
+        document.body.innerHTML = "<h1>Adgang nægtet</h1>";
+      }
+    });
+  </script>
 </MainLayout>
