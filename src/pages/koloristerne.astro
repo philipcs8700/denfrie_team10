@@ -3,17 +3,7 @@ import MainLayout from "../layouts/MainLayout.astro";
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
 ---
-<html lang="da">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Den Frie</title>
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
-  </head>
-  <body class="min-h-screen bg-neutral-50 text-neutral-800">
-
-    <!-- Header-komponent (går til kant) -->
-    <Header />
+<MainLayout title="koloristerne">
 
     <div class="p-6 mt-12 flex flex-col md:flex-row items-start justify-center max-w-full">
 
@@ -45,8 +35,4 @@ import Footer from "../components/Footer.astro";
       </div>
     </div>
 
-    <!-- Footer-komponent -->
-    <Footer />
-
-  </body>
-</html>
+</MainLayout>

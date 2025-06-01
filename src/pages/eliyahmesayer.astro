@@ -2,18 +2,10 @@
 import MainLayout from "../layouts/MainLayout.astro";
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
+import Link from '../components/Link.astro';
 ---
-<html lang="da">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Den Frie</title>
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
-  </head>
-  <body class="min-h-screen bg-neutral-50 text-neutral-800">
+<MainLayout title="eliyahmesayer">
 
-    <!-- Header-komponent (går til kant) -->
-    <Header />
 
     <div class="p-6 mt-12 flex flex-col md:flex-row items-start justify-center max-w-full">
 
@@ -49,15 +41,11 @@ Denne udstilling er støttet af: Statens Kunstfond, Augustinus Fonden, Det Obels
 
         <!-- Knap -->
         <div class="mt-6">
-          <a href="/form_1" class="inline-block bg-black hover:bg-gray-800 text-white font-semibold py-2 px-6 rounded-lg transition-colors duration-300">
-            Køb billet →
-          </a>
+          <Link href="/form_1" variant="primary" size="large">
+            Køb billet til udstillingen her
+          </Link>
         </div>
       </div>
     </div>
 
-    <!-- Footer-komponent -->
-    <Footer />
-
-  </body>
-</html>
+</MainLayout>
