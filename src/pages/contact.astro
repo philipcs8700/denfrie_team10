@@ -1,5 +1,6 @@
 ---
 import MainLayout from "../layouts/MainLayout.astro";
+import Link from "../components/Link.astro";
 ---
 <MainLayout title="Kontakt">
 
@@ -16,7 +17,9 @@ import MainLayout from "../layouts/MainLayout.astro";
           <input type="text" placeholder="Navn" class="w-full p-3 border rounded-md" />
           <input type="email" placeholder="Email" class="w-full p-3 border rounded-md" />
           <textarea placeholder="Besked" rows="5" class="w-full p-3 border rounded-md"></textarea>
-          <button type="submit" class="bg-black text-white px-6 py-2 rounded-md hover:bg-neutral-800 transition">Send</button>
+          <Link href="/contact" variant="goldbutton" size="large">
+            Send
+          </Link>
         </form>
       </div>
 
