@@ -1,18 +1,10 @@
 ---
 import MainLayout from "../layouts/MainLayout.astro";
 import Header from "../components/Header.astro";
+import Link from "../components/Link.astro";
 ---
-<html lang="da">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Den Frie</title>
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-  </head>
-  <body class="min-h-screen bg-neutral-50 text-neutral-800">
+<MainLayout title="Cafe Pegasus">
 
-    <!-- Header-komponent (går til kant) -->
-    <Header />
 
     <!-- Indhold med padding -->
     <div class="p-6 mt-12 flex flex-col items-center justify-center">
@@ -40,5 +32,4 @@ import Header from "../components/Header.astro";
       </div>
     </div>
 
-  </body>
-</html>
+</MainLayout>
