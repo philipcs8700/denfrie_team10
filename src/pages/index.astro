@@ -253,4 +253,26 @@ import heading from '../components/Heading.astro';
       </div>
     </div>
   </section>
+
+ <script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const correctPassword = "team10";
+
+    const accessGranted = localStorage.getItem("accessGranted");
+    if (accessGranted === "true") {
+      // Adgang allerede givet, gør ingenting
+      return;
+    }
+
+    const input = prompt("Indtast kode:");
+    if (input === correctPassword) {
+      localStorage.setItem("accessGranted", "true");
+    } else {
+      document.body.innerHTML = "<h1>Adgang nægtet</h1>";
+    }
+  });
+</script>
+
+
+
 </MainLayout>

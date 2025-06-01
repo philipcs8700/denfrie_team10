@@ -1624,7 +1624,24 @@ function normalizeProps(props) {
   return props;
 }
 
+async function renderScript(result, id) {
+  if (result._metadata.renderedScripts.has(id)) return;
+  result._metadata.renderedScripts.add(id);
+  const inlined = result.inlinedScripts.get(id);
+  if (inlined != null) {
+    if (inlined) {
+      return markHTMLString(`<script type="module">${inlined}</script>`);
+    } else {
+      return "";
+    }
+  }
+  const resolved = await result.resolve(id);
+  return markHTMLString(
+    `<script type="module" src="${result.userAssetsBase ? (result.base === "/" ? "" : result.base) + result.userAssetsBase : ""}${resolved}"></script>`
+  );
+}
+
 "0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ-_".split("").reduce((v, c) => (v[c.charCodeAt(0)] = c, v), []);
 "-0123456789_".split("").reduce((v, c) => (v[c.charCodeAt(0)] = c, v), []);
 
-export { NOOP_MIDDLEWARE_HEADER as N, renderComponent as a, renderTemplate as b, createComponent as c, createAstro as d, addAttribute as e, renderSlot as f, decodeKey as g, maybeRenderHead as m, renderHead as r };
+export { NOOP_MIDDLEWARE_HEADER as N, renderComponent as a, renderTemplate as b, createComponent as c, createAstro as d, addAttribute as e, renderScript as f, renderSlot as g, decodeKey as h, maybeRenderHead as m, renderHead as r };
