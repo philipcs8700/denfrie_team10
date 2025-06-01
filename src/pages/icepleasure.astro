@@ -1,0 +1,61 @@
+---
+import MainLayout from "../layouts/MainLayout.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+---
+<html lang="da">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Den Frie</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+  </head>
+  <body class="min-h-screen bg-neutral-50 text-neutral-800">
+
+    <!-- Header-komponent (går til kant) -->
+    <Header />
+
+    <div class="p-6 mt-12 flex flex-col md:flex-row items-start justify-center max-w-full">
+
+      <!-- Billede fylder helt ud til venstre kant med hover og rundede hjørner -->
+      <div class="flex-shrink-0 w-full md:w-1/2">
+        <img 
+          src="/public/icepleasure.webp" 
+          alt="Cafe Pegasus" 
+          class="w-full h-auto rounded-xl" 
+        />
+        <!-- Tekst under billedet -->
+        <p class="text-xs text-left text-neutral-600 mt-2 max-w-xs italic">
+          Denne udstilling er støttet af: Statens Kunstfond, Augustinus Fonden, Det Obelske Familiefond, Glashofs Legat, Statens Værksteder, Beckett Fonden, Kurator Laura Gerdes-Miranda 
+        </p>
+      </div>
+
+      <!-- Tekstindhold -->
+      <div class="text-center md:text-left max-w-md md:ml-8 mt-6 md:mt-0">
+        <h1 class="text-2xl font-bold text-neutral-900 mb-2">SIAN KRISTOFFERSEN: ICE-PLEASURE</h1>
+
+        <!-- streg --->
+        <div class="w-80 mx-0 border-b-2 border-black mt-3 mb-4"></div>
+
+        <p class="text-sm leading-relaxed tracking-normal">
+          Sian Kristoffersen åbner til maj 2025 sin største solopræsentation på en dansk institution til dato. Skabt specielt til Den Fries OSLO-rum, præsenterer den ambitiøse installation både nyproducerede og tidligere værker. 
+
+Kristoffersens kunstneriske praksis spænder over mange medier og materialer og trækker på inspiration fra alt fra antik mytologi og natur til science fiction, populærkultur og litteratur. Hendes værker tager ofte form som tableauer og bevæger sig mellem surrealistiske fantasier, mystiske materielle erindringer og det hverdagslige, og fremkalder et rigt spektrum af associationer, følelser og begær. 
+
+Efter at have udstillet med kunstnersammenslutningen Decembristerne i 2023 og 2024, indtager Kristoffersen nu OSLO på Den Frie med et omfattende udstillingsprojekt, der uden tvivl vil understrege hendes helt særlige praksis og position i dansk kunst. 
+        </p>
+
+        <!-- Knap -->
+        <div class="mt-6">
+          <a href="/form_1" class="inline-block bg-black hover:bg-gray-800 text-white font-semibold py-2 px-6 rounded-lg transition-colors duration-300">
+            Køb billet →
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer-komponent -->
+    <Footer />
+
+  </body>
+</html>

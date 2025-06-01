@@ -1,0 +1,54 @@
+---
+import MainLayout from "../layouts/MainLayout.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+---
+<html lang="da">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Den Frie</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+  </head>
+  <body class="min-h-screen bg-neutral-50 text-neutral-800">
+
+    <!-- Header-komponent (går til kant) -->
+    <Header />
+
+    <div class="p-6 mt-12 flex flex-col md:flex-row items-start justify-center max-w-full">
+
+      <!-- Tekstindhold -->
+      <div class="text-center md:text-left max-w-md md:mr-8 mt-6 md:mt-0">
+        <h1 class="text-2xl font-bold text-neutral-900 mb-2">Historie</h1>
+
+        <!-- streg --->
+        <div class="w-80 mx-0 border-b-2 border-black mt-3 mb-4"></div>
+
+        <p class="text-sm leading-relaxed tracking-normal">
+          Den Frie Udstilling blev stiftet i 1891 som en protest mod censuren på forårsudstillingen på Charlottenborg, og blot to år kunne gruppen præsentere internationale åndsfæller som Vincent van Gogh og Paul Gauguin i Den Fries lokaler på Rådhuspladsen.
+          <br> <br>
+          I 1898 rykkede Den Frie ind i en ny bygning tegnet af J.F. Willumsen, hvis store, åbne udstillingsrum blev set som et symbol på tidens nye kunstneriske strømninger. Bygningen blev opført mellem H.C. Ørstedsparken og Tivoli, men i 1913 blev den flyttet til sin nuværende placering på Oslo Plads, hvor bygningen blev fredet i 1986.
+          <br> <br>
+          I 2014 blev Den Frie udvidet med en ny underetage, der i dag huser Café Pegasus og udstillingsrummet OSLO. I foråret 2024 påbegyndtes en restaurering af Den Fries indgangsparti, der blev færdiggjort i marts 2025. 
+          <br> <br>
+          Med respekt for bygningens historie – og med blik for fremtiden – blev både forplads og foyer omhyggeligt fornyet. Det omfattende projekt blev udført af Praksis Arkitekter og landskabsarkitekterne DETBLÅ i tæt dialog med fredningsmyndighederne. Billedkunstneren FOS skabte desuden unikke lamper til foyeren, produceret på et glasværksted i Murano.
+        </p>
+
+      </div>
+
+      <!-- Billede fylder helt ud til højre kant med rundede hjørner -->
+      <div class="flex-shrink-0 w-full md:w-1/2">
+        <img 
+          src="/public/about.webp" 
+          alt="Cafe Pegasus" 
+          class="w-full h-auto rounded-xl" 
+        />
+      </div>
+
+    </div>
+
+    <!-- Footer-komponent -->
+    <Footer />
+
+  </body>
+</html>

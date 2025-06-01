@@ -1,0 +1,59 @@
+---
+import MainLayout from "../layouts/MainLayout.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+---
+<html lang="da">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Den Frie</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+  </head>
+  <body class="min-h-screen bg-neutral-50 text-neutral-800">
+
+    <!-- Header-komponent (går til kant) -->
+    <Header />
+
+    <div class="p-6 mt-12 flex flex-col md:flex-row items-start justify-center max-w-full">
+
+      <!-- Billede fylder helt ud til venstre kant med hover og rundede hjørner -->
+      <div class="flex-shrink-0 w-full md:w-1/2">
+        <img 
+          src="/public/sløyfe.webp" 
+          alt="SLØYFE" 
+          class="w-full h-auto rounded-xl" 
+        />
+        <!-- Tekst under billedet -->
+        <p class="text-xs text-left text-neutral-600 mt-2 max-w-xs italic">
+Denne udstilling er støttet af: Statens Kunstfond, Augustinus Fonden, Det Obelske Familiefond, 15. Juni Fonden, Dansk Tennis Fond, Louis-Hansen Fonden         </p>
+      </div>
+
+      <!-- Tekstindhold -->
+      <div class="text-center md:text-left max-w-md md:ml-8 mt-6 md:mt-0">
+        <h1 class="text-2xl font-bold text-neutral-900 mb-2">SANDRA MUJINGA: SLØYFE</h1>
+
+        <!-- streg --->
+        <div class="w-80 mx-0 border-b-2 border-black mt-3 mb-4"></div>
+
+        <p class="text-sm leading-relaxed tracking-normal">
+        Sandra Mujinga frembringer alternative verdener der sammenfiltrer teknologier, mennesker og dyr. Hendes værker er inspireret af arkæologi og science fiction hvorfra hun undersøger nye måder at overleve på en planet præget af usikkerhed og forvandling. Hun skaber enorme skulpturer, der fremtræder som hybride væsener eller rejsende i tid. De formidler en fornemmelse af en intim fremtid og værner om et fællesskab, som gør modstand mod overvågning og vold. 
+        <br><br>Den aktuelle udstilling præsenterer en bred vifte af Mujingas seneste samt nye værker i tæt udveksling med Den Fries arkitektur. 
+        <br>I centrum af bygningen er den skulpturelle lyd-installation Time as a Shield (2024) bestående af træ-agtige skulpturer der tårner sig op mod himlen. Skulpturerne, som er draperet i stof, befinder sig på tærskelen mellem natur og teknologi og indeholder et kor af stemmer, som ekkoer gennem salene. 
+        <br><br>Udstillingens titel Sløyfe (dansk: Sløjfe) antyder gentagelse, kontinuitet og overraskende genkomster, en måde at binde det sammen som vi normalt tænker som adskilt, overlappende perspektiver som får landskabet til at ændre sig. 
+        </p>
+
+        <!-- Knap -->
+        <div class="mt-6">
+          <a href="/form_1" class="inline-block bg-black hover:bg-gray-800 text-white font-semibold py-2 px-6 rounded-lg transition-colors duration-300">
+            Køb billet →
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer-komponent -->
+    <Footer />
+
+  </body>
+</html>

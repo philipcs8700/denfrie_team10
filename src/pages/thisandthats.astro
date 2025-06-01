@@ -1,0 +1,53 @@
+---
+import MainLayout from "../layouts/MainLayout.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+---
+<html lang="da">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Den Frie</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+  </head>
+  <body class="min-h-screen bg-neutral-50 text-neutral-800">
+
+    <!-- Header-komponent (går til kant) -->
+    <Header />
+
+    <div class="p-6 mt-12 flex flex-col md:flex-row items-start justify-center max-w-full">
+
+      <!-- Billede fylder helt ud til venstre kant med hover og rundede hjørner -->
+      <div class="flex-shrink-0 w-full md:w-1/2">
+        <img 
+          src="/public/thisandthats.webp" 
+          alt="ELIYAH MESAYER" 
+          class="w-full h-auto rounded-xl" 
+        />
+        <!-- Tekst under billedet -->
+        <p class="text-xs text-left text-neutral-600 mt-2 max-w-xs italic">
+Denne udstilling er støttet af: Augustinus Fonden, Det Obelske Familiefond, Glashofs Legat, Statens Kunstfond, Kurator Laura Gerdes-Miranda       </div>
+
+      <!-- Tekstindhold -->
+      <div class="text-center md:text-left max-w-md md:ml-8 mt-6 md:mt-0">
+        <h1 class="text-2xl font-bold text-neutral-900 mb-2 whitespace-nowrap">
+  OSLO: AMY O’NEILL: THIS’S AND THAT’S
+</h1>
+
+        <!-- streg --->
+        <div class="w-80 mx-0 border-b-2 border-black mt-3 mb-4"></div>
+
+        <p class="text-sm leading-relaxed tracking-normal">
+        This’s and that’s er den amerikanske kunstner Amy O’Neills første udstilling på en kunstinstitution i Danmark. Udstillingen er skabt i samarbejde med kunstner Gianna Surangkanjanajai og kurator Line Ebert og er den tredje i Den Fries OSLO-program – et program, som består af soloprojekter, der er skabt specifikt til udstillingsrummet i Den Fries underetage. 
+        <br><br>This’s and that’s fremstår som en arkitektonisk rammesætning af minder, idet udstillingen dykker ned i refleksioner over både uskyld og de skygger, den fremadskridende udvikling kan kaste. 
+        Inde i den skeletagtige scenografi, der bygger på den foregående OSLO-udstillings rammer i omskabt form, fyldes udstillingsrummet af et filmisk tableau af quiltede tæpper, beklædningsgenstande og figurer i diverse positioner. 
+        <br><br>Hele iscenesættelsen fremstår både stærkt taktil og gennemtrængelig: De mønstrede quiltede tæpper er hængt op, så de fungerer både som vægpaneler og som baggrunde for forskellige klædningsgenstande. 
+        </p>
+      </div>
+    </div>
+
+    <!-- Footer-komponent -->
+    <Footer />
+
+  </body>
+</html>

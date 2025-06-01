@@ -1,0 +1,59 @@
+---
+import MainLayout from "../layouts/MainLayout.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+---
+<html lang="da">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Den Frie</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+  </head>
+  <body class="min-h-screen bg-neutral-50 text-neutral-800">
+
+    <!-- Header-komponent (går til kant) -->
+    <Header />
+
+    <div class="p-6 mt-12 flex flex-col md:flex-row items-start justify-center max-w-full">
+
+      <!-- Billede fylder helt ud til venstre kant med hover og rundede hjørner -->
+      <div class="flex-shrink-0 w-full md:w-1/2">
+        <img 
+          src="/public/bulletin.webp" 
+          alt="Cafe Pegasus" 
+          class="w-full h-auto rounded-xl" 
+        />
+        <!-- Tekst under billedet -->
+        <p class="text-xs text-left text-neutral-600 mt-2 max-w-xs italic">
+        Sara Sjölin (DK/SE), Rasmus Røhling (DK), Éva Mag (SE), Frédéric Gies (FR), Aske Thiberg (DK), Teo Ala-Ruona (FI), Kristoffer Akselbo (DK), Sofie Winther (DK), Seimi Nørregaard (DK), Elisabeth Molin (DK/UK), Kasper Hesselbjerg (DK), Persona Non Grata (DK/JP), Eau Pernice (DK), Claudia Lomoschitz & Alex Franz Zehetbauer (USA/AUS) & Beyond Darkness (DK/LU). 
+        </p>
+      </div>
+
+      <!-- Tekstindhold -->
+      <div class="text-center md:text-left max-w-md md:ml-8 mt-6 md:mt-0">
+        <h1 class="text-2xl font-bold text-neutral-900 mb-2">THE PERFORMANCE BULLETIN</h1>
+
+        <!-- streg --->
+        <div class="w-80 mx-0 border-b-2 border-black mt-3 mb-4"></div>
+
+        <p class="text-sm leading-relaxed tracking-normal">
+        Den Frie og Toaster præsenterer vores nye performancefestival The Performance Bulletin, som finder sted fra 5. til 8. juni 2025. 
+        <br>I samarbejde med danske og internationale performancekunstnere undersøger vi, hvordan situationsbestemte performanceværker kan introducere alternative måder opleve samtidskunst på. Programmet er formet af kunstneriske aktioner og akts, der forstyrrer blikket, vækker sanserne og åbner for nye forestillinger og nuanceringer gennem kropsliggjorte, situerede og processuelle performances. 
+        <br><br>Programmet er baseret på tætte samarbejder med kunstnere, der eksperimenterer md alt fra feministiske åbninger af symboler og monumenter i byen, til kollektive danseekstaser, vokaloptrædener, fælles middage, performative udforskninger af byens infrastruktur og trafikale knudepunkter, samt performanceværker der sænker tempoet og øger vores sensibilitet. Improvisation og bevægelse er centrale markører i programmet, som eksperimenterer med publikumsadgang og brugen af vores fælles offentlige byrum. Programmet hylder performancekunstens uventede, ubestemte og oprørske impulser og tester vores opmærksomhed og sociale engagement i byrummet gennem kunstens happening. 
+        </p>
+
+        <!-- Knap -->
+        <div class="mt-6">
+          <a href="/form_1" class="inline-block bg-black hover:bg-gray-800 text-white font-semibold py-2 px-6 rounded-lg transition-colors duration-300">
+            Køb billet →
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer-komponent -->
+    <Footer />
+
+  </body>
+</html>
