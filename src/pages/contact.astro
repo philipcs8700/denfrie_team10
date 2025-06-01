@@ -1,40 +1,144 @@
 ---
 import MainLayout from "../layouts/MainLayout.astro";
-import Header from "../components/Header.astro";
-import Footer from "../components/Footer.astro";
 ---
-<MainLayout title="contact">
+<MainLayout title="Kontakt">
 
+  <section class="px-6 py-12 max-w-6xl mx-auto">
+    <h1 class="text-3xl font-bold text-neutral-900 mb-8 text-center">Kontakt</h1>
 
-    <div class="p-6 mt-12 flex flex-col md:flex-row items-start justify-center max-w-full">
+    <!-- Kontaktformular + Kort -->
+    <div class="grid md:grid-cols-2 gap-8 mb-16">
 
-      <!-- Tekstindhold -->
-      <div class="text-center md:text-left max-w-md md:mr-8 mt-6 md:mt-0">
-        <h1 class="text-2xl font-bold text-neutral-900 mb-2">Historie</h1>
-
-        <!-- streg --->
-        <div class="w-80 mx-0 border-b-2 border-black mt-3 mb-4"></div>
-
-        <p class="text-sm leading-relaxed tracking-normal">
-          Den Frie Udstilling blev stiftet i 1891 som en protest mod censuren på forårsudstillingen på Charlottenborg, og blot to år kunne gruppen præsentere internationale åndsfæller som Vincent van Gogh og Paul Gauguin i Den Fries lokaler på Rådhuspladsen.
-          <br> <br>
-          I 1898 rykkede Den Frie ind i en ny bygning tegnet af J.F. Willumsen, hvis store, åbne udstillingsrum blev set som et symbol på tidens nye kunstneriske strømninger. Bygningen blev opført mellem H.C. Ørstedsparken og Tivoli, men i 1913 blev den flyttet til sin nuværende placering på Oslo Plads, hvor bygningen blev fredet i 1986.
-          <br> <br>
-          I 2014 blev Den Frie udvidet med en ny underetage, der i dag huser Café Pegasus og udstillingsrummet OSLO. I foråret 2024 påbegyndtes en restaurering af Den Fries indgangsparti, der blev færdiggjort i marts 2025. 
-          <br> <br>
-          Med respekt for bygningens historie – og med blik for fremtiden – blev både forplads og foyer omhyggeligt fornyet. Det omfattende projekt blev udført af Praksis Arkitekter og landskabsarkitekterne DETBLÅ i tæt dialog med fredningsmyndighederne. Billedkunstneren FOS skabte desuden unikke lamper til foyeren, produceret på et glasværksted i Murano.
-        </p>
-
+      <!-- Kontaktformular -->
+      <div class="bg-neutral-100 p-6 rounded-xl shadow-md">
+        <h2 class="text-xl font-semibold mb-4">Skriv til os</h2>
+        <form class="space-y-4">
+          <input type="text" placeholder="Navn" class="w-full p-3 border rounded-md" />
+          <input type="email" placeholder="Email" class="w-full p-3 border rounded-md" />
+          <textarea placeholder="Besked" rows="5" class="w-full p-3 border rounded-md"></textarea>
+          <button type="submit" class="bg-black text-white px-6 py-2 rounded-md hover:bg-neutral-800 transition">Send</button>
+        </form>
       </div>
 
-      <!-- Billede fylder helt ud til højre kant med rundede hjørner -->
-      <div class="flex-shrink-0 w-full md:w-1/2">
-        <img 
-          src="/public/about.webp" 
-          alt="Cafe Pegasus" 
-          class="w-full h-auto rounded-xl" 
-        />
+      <!-- Google Maps -->
+      <div class="rounded-xl overflow-hidden shadow-md">
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2244.807133289144!2d12.582977316172681!3d55.69133058053474!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4652530e0e51a4ff%3A0x1a9b38a0e58ef6b2!2sOslo%20Pl.%201%2C%202100%20K%C3%B8benhavn!5e0!3m2!1sda!2sdk!4v1717256000000" 
+          width="100%" 
+          height="100%" 
+          style="border:0;" 
+          allowfullscreen="" 
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          class="h-full min-h-[400px] w-full">
+        </iframe>
       </div>
-
     </div>
+
+    <!-- Kontaktpersoner -->
+    <div class="space-y-10">
+      <h2 class="text-2xl font-bold text-neutral-900">Medarbejdere</h2>
+
+      <div class="grid md:grid-cols-2 gap-8 text-sm">
+
+        <!-- Sektion: Ledelse -->
+        <div>
+          <h3 class="text-lg font-semibold mb-4">Ledelse</h3>
+
+          <div class="mb-6">
+            <p class="font-semibold">Direktør</p>
+            <p>Marianne Torp</p>
+            <p>Email: <a href="mailto:mt@denfrie.dk" class="text-blue-600">mt@denfrie.dk</a></p>
+            <p>Telefon: +45 41 25 89 49</p>
+          </div>
+
+          <div class="mb-6">
+            <p class="font-semibold">Bygningsinspektør</p>
+            <p>Søren Fjeldsø</p>
+            <p>Email: <a href="mailto:sf@denfrie.dk" class="text-blue-600">sf@denfrie.dk</a></p>
+            <p>Telefon: +45 29 24 26 49</p>
+          </div>
+
+          <div class="mb-6">
+            <p class="font-semibold">Administrationschef</p>
+            <p>Sigrun Nolsøe</p>
+            <p>Email: <a href="mailto:sn@denfrie.dk" class="text-blue-600">sn@denfrie.dk</a></p>
+            <p>Telefon: +45 33 12 28 03</p>
+          </div>
+        </div>
+
+        <!-- Sektion: Udstillingsinspektører -->
+        <div>
+          <h3 class="text-lg font-semibold mb-4">Udstillingsinspektører</h3>
+
+          <div class="mb-6">
+            <p class="font-semibold">Laura Gerdes-Miranda</p>
+            <p>Email: <a href="mailto:lgm@denfrie.dk" class="text-blue-600">lgm@denfrie.dk</a></p>
+            <p>Telefon: +45 22 90 42 92</p>
+          </div>
+
+          <div class="mb-6">
+            <p class="font-semibold">Magnus Thorø Clausen</p>
+            <p>Email: <a href="mailto:mtc@denfrie.dk" class="text-blue-600">mtc@denfrie.dk</a></p>
+            <p>Telefon: +45 28 11 45 29</p>
+          </div>
+
+          <div class="mb-6">
+            <p class="font-semibold">Iben Bach Elmstrøm</p>
+            <p>Email: <a href="mailto:ie@denfrie.dk" class="text-blue-600">ie@denfrie.dk</a></p>
+            <p>Telefon: +45 60 43 74 09</p>
+          </div>
+        </div>
+
+        <!-- Sektion: Kommunikation & Café -->
+        <div>
+          <h3 class="text-lg font-semibold mb-4">Kommunikation & Café</h3>
+
+          <div class="mb-6">
+            <p class="font-semibold">Kommunikationschef</p>
+            <p>Nikola Nedeljkovic Gøttsche</p>
+            <p>Email: <a href="mailto:nng@denfrie.dk" class="text-blue-600">nng@denfrie.dk</a></p>
+            <p>Telefon: +45 60 52 86 81</p>
+          </div>
+
+          <div class="mb-6">
+            <p class="font-semibold">Café- og arrangementsansvarlig</p>
+            <p>Alexander Melchior</p>
+            <p>Email: <a href="mailto:am@denfrie.dk" class="text-blue-600">am@denfrie.dk</a></p>
+            <p>Telefon: +45 61 66 51 75</p>
+          </div>
+
+          <div class="mb-6">
+            <p class="font-semibold">Event koordinator</p>
+            <p>Amalie Bornich</p>
+            <p>Email: <a href="mailto:abo@denfrie.dk" class="text-blue-600">abo@denfrie.dk</a></p>
+            <p>Telefon: +45 25 62 39 99</p>
+          </div>
+        </div>
+
+        <!-- Sektion: Servicemedarbejdere -->
+        <div>
+          <h3 class="text-lg font-semibold mb-4">Servicemedarbejdere</h3>
+          <ul class="list-disc list-inside space-y-1">
+            <li>Emma-Emilia Rasmussen</li>
+            <li>Katrine Thorup</li>
+            <li>Lærke Bitsch Lynggaard</li>
+            <li>Anna Bregnehave Windum</li>
+            <li>Nuka Marstrand</li>
+            <li>Sandra Turèll Henningsen</li>
+            <li>Savannah Benneweis</li>
+            <li>Solvej Kørner Brekling</li>
+            <li>Viola Nolsøe Krebbers</li>
+            <li>Jamilla Mahmoud</li>
+            <li>Zakarias Kofi Dadson Sanderson</li>
+          </ul>
+
+          <h3 class="text-lg font-semibold mt-10 mb-4">Job & praktik</h3>
+          <p>Ingen åbne jobstillinger</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
 </MainLayout>
