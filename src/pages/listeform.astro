@@ -6,18 +6,19 @@ import card3 from '../components/card3.astro';
 import Link from '../components/Link.astro';
 import { Image } from 'astro:assets';
 import thumbsup from "../assets/images/thumbsup.png";
+import Card3 from "../components/card3.astro";
 ---
 <MainLayout title="Titel">
   <section class="pt-10 px-4">
     <div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-screen-xl mx-auto px-4 py-8">
       <!-- Left column -->
       <div class="flex flex-col space-y-6">
-      <Card
+      <Card3
         url="/singleview"
         cardimage="img1_7.webp"
         cardimagealt="Trip 1"
         cardtitel="HENRIK OLESEN: FOOD CHAIN"
-        cardtekst="brødtext:"
+        cardtekst="brødtext"
         cardtekst2="Varighed:"
         cardtekst3="22.02.25 —  20.04.25:"
         cardtekst4="Tid:"
@@ -26,53 +27,56 @@ import thumbsup from "../assets/images/thumbsup.png";
         badgenyt="false"
         badgerabat="false"
         badgefaatilbage="false"
-      ></Card>
-      <Card
+      ></Card3>
+      <Card3
         url="/singleview"
         cardimage="img1_8.webp"
         cardimagealt="Trip 1"
         cardtitel="KOLORISTERNE 2025"
-        cardtekst="Varighed:"
-        cardtekst2="12.01.25 —  09.02.25"
-        cardtekst3="Tid:"
-        cardtekst4="17.00"
+        cardtekst="brødtext"
+        cardtekst2="Varighed:"
+        cardtekst3="12.01.25 —  09.02.25:"
+        cardtekst4="tid"
+        cardtekst5="17.00"
         cardbuttontekst="Læs mere →"
         badgenyt="false"
         badgerabat="false"
         badgefaatilbage="false"
-      ></Card>
+      ></Card3>
       </div>
     
       <!-- Right column -->
       <div class="flex flex-col space-y-6">
-      <Card
+      <Card3
         url="/singleview"
         cardimage="img1_9.webp"
         cardimagealt="Trip 1"
         cardtitel="OSLO: THE RESTAURANT SEASON "
-        cardtekst="Varighed:"
-        cardtekst2="05.10.24 — 19.01.25 "
-        cardtekst3="Tid:"
-        cardtekst4="20.00"
+        cardtekst="brødtext"
+        cardtekst2="Varighed"
+        cardtekst3="05.10.24 — 19.01.25"
+        cardtekst4="tid"
+        cardtekst5="20.00"
         cardbuttontekst="Læs mere →"
         badgenyt="false"
         badgerabat="false"
         badgefaatilbage="false"
-      ></Card>
-      <Card
+      ></Card3>
+      <Card3
         url="/singleview"
         cardimage="img1_10.webp"
         cardimagealt="Trip 1"
         cardtitel="DECEMBERBRISTERNE: EXTRA"
-        cardtekst="Varighed:"
-        cardtekst2="30.11.24 —  05.01.25"
-        cardtekst3="Tid:"
-        cardtekst4="18.00"
+        cardtekst="brødtext"
+        cardtekst2="Varighed:"
+        cardtekst3="30.11.24 —  05.01.25:"
+        cardtekst4="tid"
+        cardtekst5="18.00"
         cardbuttontekst="Læs mere →"
         badgenyt="false"
         badgerabat="false"
         badgefaatilbage="false"
-      ></Card>
+      ></Card3>
       </div>
     </div>
     </section>

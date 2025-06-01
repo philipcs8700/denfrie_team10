@@ -1,5 +1,5 @@
 ---
-const { url="#", cardimage="", cardimagealt="", cardtitel="", cardtekst="", cardbuttontekst="", cardtekst2="", cardtekst3="", cardtekst4="",
+const { url="#", cardimage="", cardimagealt="", cardtitel="", cardtekst="", cardbuttontekst="", cardtekst2="", cardtekst3="", cardtekst4="",cardtekst5="",
 badgenyt="false", badgerabat="false", badgefaatilbage="false", } = Astro.props; 
 import Link from '../components/Link.astro';
 import Heading from '../components/Heading.astro';
@@ -22,10 +22,10 @@ import Heading from '../components/Heading.astro';
   <div class="card-body p-5">
     <Heading htmlheading="h1" size="mediumbold" stylingclasses="card-title">{cardtitel}</Heading>
     <Heading htmlheading="p" size="smallbold" stylingclasses="card-tekst">{cardtekst}</Heading>
-    <Heading htmlheading="h2" size="smallbold" stylingclasses="card-tekst">{cardtekst2}</Heading>
-    <Heading htmlheading="h3" size="small" stylingclasses="card-tekst2">{cardtekst3}</Heading>
-    <Heading htmlheading="h4" size="smallbold" stylingclasses="card-tekst3">{cardtekst4}</Heading>
-    <Heading htmlheading="h5" size="small" stylingclasses="card-tekst4">{cardtekst5}</Heading>
+    <Heading htmlheading="h2" size="smallbold" stylingclasses="card-tekst2">{cardtekst2}</Heading>
+    <Heading htmlheading="h3" size="small" stylingclasses="card-tekst3">{cardtekst3}</Heading>
+    <Heading htmlheading="h4" size="smallbold" stylingclasses="card-tekst4">{cardtekst4}</Heading>
+    <Heading htmlheading="h5" size="small" stylingclasses="card-tekst5">{cardtekst5}</Heading>
    
     <div class="card-actions justify-end p-5">
     <Link href={url} variant="primary">{cardbuttontekst}</Link>
