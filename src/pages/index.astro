@@ -34,7 +34,7 @@ import heading from '../components/Heading.astro'
 				Køb billet til udstillingen her
 			</Link>
 			<Link href="/listeform" variant="goldbutton" size="large">
-                Se events her
+                Se events her 
               </Link>
           </div>
         </div>
@@ -49,19 +49,21 @@ import heading from '../components/Heading.astro'
         </div>
     </section>
 
-		   	<!--start på card sektion -->
-	  </section>
-		   <section id="destinationer" class="pt-20">
-  <div class="flex items-left space-x-4">
-    <h1 class="text-xl sm:text-xl md:text-6xl text-left text-neutral-950 font-poppins font-normal pb-6 sm:pb-12 pl-20">
+		<section id="destinationer" class="pt-20">
+  <!-- Overskrift -->
+  <div class="pl-20">
+    <h1 class="text-xl sm:text-xl md:text-6xl text-left text-neutral-950 font-poppins font-normal pb-4">
       Aktuelle udstillinger
-    </h1> 
+    </h1>
+
+    <!-- Line -->
+    <div class="w-[700px] h-[5px] bg-neutral-900 rounded-4xl mt-[25px]"></div>
+    <!-- Line -->
+
+
   </div>
-  <!-- Line -->
-  <div class="w-2/3 h-4">
-    <div class="h-2 bg-neutral-900 rounded-2xl"></div>
-  </div>
-  <!-- Line -->
+</section>
+
   <div class="max-w-screen-xl mx-auto px-9">
     <div class="sm:grid-cols-2 md:grid-cols-3 gap-12 pt-8">
       <Card
@@ -94,11 +96,11 @@ import heading from '../components/Heading.astro'
       Kommende udstillinger
     </h1>
   </div>
+  
   <!-- Line -->
-  <div class="w-2/3 h-4">
-    <div class="h-2 bg-neutral-900 rounded-2xl"></div>
-  </div>
-  <!-- Line -->
+    <div class="w-[700px] h-[5px] bg-neutral-900 rounded-4xl mt-[25px]"></div>
+    <!-- Line -->
+
   <div class="max-w-screen-xl mx-auto px-9">
     <div class="sm:grid-cols-2 md:grid-cols-3 gap-12 pt-8">
       <Card
@@ -110,7 +112,7 @@ import heading from '../components/Heading.astro'
         cardtekst2="23.05.25 — 21.09.25"
         cardtekst3="Tid:"
         cardtekst4="10.00"
-        cardbuttontekst="Læs mere! →"
+        cardbuttontekst="Læs mere →"
         badgenyt="false"
         badgerabat="false"
         badgefaatilbage="false"
@@ -135,7 +137,7 @@ import heading from '../components/Heading.astro'
         cardtekst2="05.06.25  —  21.09.25"
         cardtekst3="Tid:"
         cardtekst4="15.00"
-        cardbuttontekst="Læs mere! →"
+        cardbuttontekst="Læs mere →"
         badgenyt="false"
         badgerabat="false"
         badgefaatilbage="false"
@@ -167,7 +169,7 @@ import heading from '../components/Heading.astro'
         cardtekst2="23.01.26  —  03.05.26"
         cardtekst3="Tid:"
         cardtekst4="17.00"
-        cardbuttontekst="Læs mere! →"
+        cardbuttontekst="Læs mere →"
         badgenyt="false"
         badgerabat="false"
         badgefaatilbage="false"
@@ -183,13 +185,12 @@ import heading from '../components/Heading.astro'
 <section id="destinationer" class="pt-20">
 <div class="flex items-left space-x-4">
 <h1 class="text-xl sm:text-xl md:text-6xl text-left text-neutral-950 font-serif font-normal pb-6 sm:pb-12 pl-20">
-	TIDLIGERE <br>
-	udstillinger
+	Tidligere udstillinger
 </h1>
 </div>
-<!-- Line -->
-<div class="w-2/3 h-4">
-<div class="h-2 bg-neutral-900 rounded-2xl"></div>
+
+
+
 </div>
 <div class="max-w-screen-xl mx-auto px-9">
 <div class="sm:grid-cols-2 md:grid-cols-3 gap-12 pt-8">
@@ -202,7 +203,7 @@ cardtekst="Varighed:"
 cardtekst2="07.02.25 —  04.05.25"
 cardtekst3="Tid:"
 cardtekst4="13.00"
-cardbuttontekst="Læs mere! →"
+cardbuttontekst="Læs mere →"
 badgenyt="false"
 badgerabat="false"
 badgefaatilbage="false"
@@ -227,7 +228,7 @@ badgefaatilbage="false"
 		  cardtekst2="22.02.25 —  20.04.25"
 		  cardtekst3="Tid:"
 		  cardtekst4="19.00"
-		  cardbuttontekst="Læs mere! →"
+		  cardbuttontekst="Læs mere →"
 		  badgenyt="false"
 		  badgerabat="false"
 		  badgefaatilbage="false"
@@ -241,7 +242,7 @@ badgefaatilbage="false"
 		  cardtekst2="12.01.25 —  09.02.25"
 		  cardtekst3="Tid:"
 		  cardtekst4="17.00"
-		  cardbuttontekst="Læs mere! →"
+		  cardbuttontekst="Læs mere →"
 		  badgenyt="false"
 		  badgerabat="false"
 		  badgefaatilbage="false"
@@ -259,7 +260,7 @@ badgefaatilbage="false"
 		  cardtekst2="05.10.24 — 19.01.25 "
 		  cardtekst3="Tid:"
 		  cardtekst4="20.00"
-		  cardbuttontekst="Læs mere! →"
+		  cardbuttontekst="Læs mere →"
 		  badgenyt="false"
 		  badgerabat="false"
 		  badgefaatilbage="false"
@@ -273,7 +274,7 @@ badgefaatilbage="false"
 		  cardtekst2="30.11.24 —  05.01.25"
 		  cardtekst3="Tid:"
 		  cardtekst4="18.00"
-		  cardbuttontekst="Læs mere! →"
+		  cardbuttontekst="Læs mere →"
 		  badgenyt="false"
 		  badgerabat="false"
 		  badgefaatilbage="false"
