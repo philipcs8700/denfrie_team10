@@ -1,0 +1,44 @@
+---
+import MainLayout from "../layouts/MainLayout.astro";
+import Header from "../components/Header.astro";
+---
+<html lang="da">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Den Frie</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  </head>
+  <body class="min-h-screen bg-neutral-50 text-neutral-800">
+
+    <!-- Header-komponent (går til kant) -->
+    <Header />
+
+    <!-- Indhold med padding -->
+    <div class="p-6 mt-12 flex flex-col items-center justify-center">
+      <div class="flex flex-col md:flex-row items-center justify-center gap-12 max-w-5xl">
+
+        <!-- Billede -->
+        <img 
+          src="/src/assets/images/Cafe.jpg" 
+          alt="Cafe Pegasus" 
+          class="w-64 h-auto object-cover rounded-lg border border-gray-300" 
+        />
+
+        <!-- Tekstindhold -->
+        <div class="text-center md:text-left max-w-md">
+          <h1 class="text-3xl font-semibold mb-4 text-neutral-900">Den Frie Cafe Pegasus</h1>
+          <p class="text-base leading-relaxed tracking-normal">
+            Café Pegasus serverer mad, kaffe og vin i Den Fries stemningsfulde underetage. Her finder du et bredt udvalg af primært plantebaserede retter, tilberedt med sæsonens grønt og fokus på økologiske og lokale råvarer fra mindre leverandører.
+            <br><br>
+            I 2021 blev Pegasus’ interiør opdateret af arkitektduoen Mentze Ottenstein som en hyldest til Den Fries historiske arkitektur: Caférummet er indrettet med Willumsens originale bænke, reproduktioner af hans ikoniske kurvestol, og udsmykket med autentiske Willumsen-plakater fra 1902.
+            <br><br>
+            <span class="font-medium">Udvalgte leverandører:</span> Copenhagen Coffee Lab, Deppaneur, Hancock, Herslev Bryghus, Klippingegård, Melin Vin, Nørrebrew, Sing Tehus, Table Ferments, Vin på Nørrebro, Vild Is.
+          </p>
+        </div>
+
+      </div>
+    </div>
+
+  </body>
+</html>
