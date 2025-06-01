@@ -1,10 +1,11 @@
 import { defineConfig } from 'astro/config';
 import tailwindcss from '@tailwindcss/vite'; 
-
 import alpinejs from "@astrojs/alpinejs";
+import netlify from '@astrojs/netlify'; // <-- tilføjet
 
-// https://astro.build/config
 export default defineConfig({
+  output: 'static', // <-- vigtigt for statisk site
+  adapter: netlify(), // <-- tilføjet adapter
   vite: {  
     plugins: [tailwindcss()],
   },
