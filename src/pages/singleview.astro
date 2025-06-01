@@ -1,4 +1,7 @@
 ---
+import MainLayout from "../layouts/MainLayout.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
 ---
 <html lang="da">
   <head>
@@ -7,10 +10,15 @@
     <title>Den Frie</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
   </head>
-  <body class="min-h-screen flex items-center justify-center bg-neutral-50 text-neutral-800 p-6">
-    <div class="flex flex-col items-center justify-center">
+  <body class="min-h-screen bg-neutral-50 text-neutral-800">
 
+    <!-- Header-komponent (går til kant) -->
+    <Header />
+
+    <!-- Indhold med padding -->
+    <div class="p-6 mt-12 flex flex-col items-center justify-center">
       <div class="flex flex-col md:flex-row items-center justify-center gap-12 max-w-5xl">
+
         <!-- Billede -->
         <img 
           src="/src/assets/images/Cafe.jpg" 
@@ -29,8 +37,9 @@
             <span class="font-medium">Udvalgte leverandører:</span> Copenhagen Coffee Lab, Deppaneur, Hancock, Herslev Bryghus, Klippingegård, Melin Vin, Nørrebrew, Sing Tehus, Table Ferments, Vin på Nørrebro, Vild Is.
           </p>
         </div>
-      </div>
 
+      </div>
     </div>
+
   </body>
 </html>
