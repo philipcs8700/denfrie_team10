@@ -1,0 +1,52 @@
+---
+import MainLayout from "../layouts/MainLayout.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+---
+<html lang="da">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Den Frie</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+  </head>
+  <body class="min-h-screen bg-neutral-50 text-neutral-800">
+
+    <!-- Header-komponent (går til kant) -->
+    <Header />
+
+    <div class="p-6 mt-12 flex flex-col md:flex-row items-start justify-center max-w-full">
+
+      <!-- Billede fylder helt ud til venstre kant med hover og rundede hjørner -->
+      <div class="flex-shrink-0 w-full md:w-1/2">
+        <img 
+          src="/public/restaurant.webp" 
+          alt="THE RESTAURANT SEASON" 
+          class="w-full h-auto rounded-xl" 
+        />
+        <!-- Tekst under billedet -->
+        <p class="text-xs text-left text-neutral-600 mt-2 max-w-xs italic">
+Denne udstilling er støttet af: Augustinus Fonden, Det Obelske Familiefond, Glashofs Legat, Statens Kunstfond, Kurator Magnus Thorø Clausen</div>
+
+      <!-- Tekstindhold -->
+      <div class="text-center md:text-left max-w-md md:ml-8 mt-6 md:mt-0">
+        <h1 class="text-2xl font-bold text-neutral-900 mb-2">THE RESTAURANT SEASON 2</h1>
+
+        <!-- streg --->
+        <div class="w-80 mx-0 border-b-2 border-black mt-3 mb-4"></div>
+
+        <p class="text-sm leading-relaxed tracking-normal">
+        I løbet af de seneste otte år har Will Benedict og Steffen Jørgensen samarbejdet om, og vist episoder af, en fortløbende videoserie med titlen The Restaurant. Serien foregår i ruinerne af en skyskraber i Paris, som nu er omgivet af tæt jungle. 
+        Her møder vi med en række menneskelige og ikke-menneskelige karakterer, som tilbereder og serverer mad for hinanden, famler efter mening og mislykkes med at være nyttige samfundsborgere. 
+        <br><br> I Season 2, som præsenteres her på Den Frie, følger vi en kriminaldetektiv og ejer af Café Wha?, der aggressivt udspørger sine kunder om deres spisevaner, deres forhold til “hanger” (en tilstand af kombineret sult og surhed) og hvordan mad i det hele taget påvirker deres liv. 
+        I skyggen af The Restaurant er en menneskelignende blå kylling og en mand med ører i stedet for øjne i gang med en videnskabs-podcast foran et mindre publikum bestående af landbrugsdyr. 
+        <br><br>Med hjælp fra eksperter indenfor bioteknologi, fysik og zoologi udforsker de i programmet, hvordan mikrobakterier fungerer, hvor fedt kommer fra, og hvordan det ville være at leve på jorden, hvis den udelukkende var lavet af blåbær. I hver episode stifter vi også bekendtskab med en melankolsk måne, en T-rex i et udendørs toilethus, et fugleskræmsel uden rettigheder, og et halv-menneske, halv-snegl, der bringer de essentielle leveringer ud, som holder sammen på denne verden. 
+        </p>
+      </div>
+    </div>
+
+    <!-- Footer-komponent -->
+    <Footer />
+
+  </body>
+</html>
